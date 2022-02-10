@@ -7,7 +7,7 @@ type TitleProps = {
     title: string;
 }
 
-export default class New extends Component<TitleProps,{}> {
+export default class Newo extends Component<TitleProps,{}> {
   render() {
     //   const {title} = this.props //! you write this or
     return (
