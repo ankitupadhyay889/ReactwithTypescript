@@ -9,7 +9,7 @@ type MainProp = {
     category: string;
 }
 
-export default class UsingTyp extends Component<MainProp , MainState> {
+export default class Usestapro extends Component<MainProp , MainState> {
     constructor(props:MainProp) {
       super(props)
         this.state = {
