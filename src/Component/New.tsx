@@ -1,6 +1,6 @@
 // ! Class component without state.
 
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 
 type TitleProps = {
