@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Newgen from './Component/Newgen';
+import Newda from './Component/Newda';
 // import Newo from './Component/Newo';
 // import Day1 from './Component/Day1';
 
@@ -11,7 +11,7 @@ class App extends Component {
         {/* <Day1 message='Hello this is first example in React with TypeScript'/> */}
         {/* <Newo title='Ankit Upadhyay'/> */}
 
-        <Newgen />
+        <Newda />
 
       </div>
     );

@@ -4,7 +4,7 @@ type Cosa = {
     time: Date;
 }
 
-class Newgen extends Component<{} , Cosa> {
+class Newda extends Component<{} , Cosa> {
 
     co = () => {
         this.setState({time: new Date()})
@@ -28,4 +28,4 @@ class Newgen extends Component<{} , Cosa> {
     }
 }
 
-export default Newgen;
+export default Newda;
