@@ -1,3 +1,5 @@
+// ! Class component with state and props
+
 import {Component} from 'react';
 
 type CountProp = {
