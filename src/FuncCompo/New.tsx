@@ -8,7 +8,7 @@ type Listpro = {
     }[]
 }
 
-const First = (props:Listpro) => {
+const New = (props:Listpro) => {
     return (
         <div>
             <li> {props.lists[0].name} </li>
@@ -18,4 +18,4 @@ const First = (props:Listpro) => {
     );
 };
 
-export default First;
+export default New;
