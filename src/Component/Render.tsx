@@ -24,7 +24,7 @@ export default class Render extends Component<Qpro , Qsa> {
         return Math.floor(Math.random() * (max - min) + min);
     } 
 
-    getNex = (): void => this.setState(state => ({inde: this.getIn()}));
+    getNex = () => this.setState(state => ({inde: this.getIn()}));
 
   render() {
     return (
