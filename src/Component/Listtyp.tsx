@@ -13,8 +13,8 @@ export default class Listtyp extends Component<Listpro> {
     return (
       <div>
           <li> {this.props.lists[0].name} </li>
-          <li> {this.props.lists[1].address} </li>
-          <li> {this.props.lists[2].phonenumber} </li>
+          <li> {this.props.lists[0].address} </li>
+          <li> {this.props.lists[0].phonenumber} </li>
       </div>
     )
   }

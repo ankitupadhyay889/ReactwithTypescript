@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 import Listtyp from './Component/Listtyp';
 // import Usestapro from './Component/Usestapro';
 // import Newda from './Component/Newda';
@@ -16,7 +17,7 @@ class App extends Component {
       }
     ]
     return (
-      <div>
+      <div className='App'>
 
         {/* <Day1 message='Hello this is first example in React with TypeScript'/> */}
         {/* <Newo title='Ankit Upadhyay'/> */}
@@ -33,3 +34,29 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
+
+// import React from 'react';
+// import First from './FuncCompo/First';
+
+// const App = () => {
+
+//       let lists = [
+//       {
+//         name:"Ankit",
+//         address: "N3/75",
+//         phonenumber: 7845896548
+//       }
+//     ]
+
+//   return (
+//     <div>
+//       <First lists={lists} />
+//     </div>
+//   );
+// };
+
+// export default App;
