@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Child from './Component/Child';
+import Event from './Component/Event';
+// import Child from './Component/Child';
 // import Listtyp from './Component/Listtyp';
 // import Usestapro from './Component/Usestapro';
 // import Newda from './Component/Newda';
@@ -8,7 +9,6 @@ import Child from './Component/Child';
 // import Day1 from './Component/Day1';
 
 class App extends Component {
-
   render() {
     // let list = [
     //   {
@@ -36,7 +36,9 @@ class App extends Component {
 
         {/* <Listtyp lists={list} address={addr} name={naArr} /> */}
 
-        <Child styles={{color: 'red'}}> This is children data </Child>
+        {/* <Child styles={{color: 'red'}}> This is children data </Child> */}
+
+        <Event />
 
       </div>
     );
