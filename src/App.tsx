@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Event from './Component/Event';
+import Render from './Component/Render';
+// import Event from './Component/Event';
 // import Child from './Component/Child';
 // import Listtyp from './Component/Listtyp';
 // import Usestapro from './Component/Usestapro';
@@ -24,6 +25,8 @@ class App extends Component {
 
     // let naArr =['ankit' , 'upadhyay' , 'varanasi']
 
+    let qu = ["aawwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqkoooooooooookpppppppppppppaqqqqqqqqqqqqqqqqpkkkkkkkkkkk"]
+
     return (
       <div className='App'>
 
@@ -38,7 +41,9 @@ class App extends Component {
 
         {/* <Child styles={{color: 'red'}}> This is children data </Child> */}
 
-        <Event />
+        {/* <Event /> */}
+
+        <Render quo={qu} />
 
       </div>
     );
