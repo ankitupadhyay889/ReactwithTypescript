@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Listtyp from './Component/Listtyp';
+import Child from './Component/Child';
+// import Listtyp from './Component/Listtyp';
 // import Usestapro from './Component/Usestapro';
 // import Newda from './Component/Newda';
 // import Newo from './Component/Newo';
@@ -9,13 +10,20 @@ import Listtyp from './Component/Listtyp';
 class App extends Component {
 
   render() {
-    let list = [
-      {
-        name:"Ankit",
-        address: "N3/75",
-        phonenumber: 7845896548
-      }
-    ]
+    // let list = [
+    //   {
+    //     name:"Ankit",
+    //     phonenumber: 7845896548
+    //   }
+    // ]
+
+    // let addr = {
+    //   city: "Varanasi",
+    //   pincode: 221005
+    // }
+
+    // let naArr =['ankit' , 'upadhyay' , 'varanasi']
+
     return (
       <div className='App'>
 
@@ -26,7 +34,9 @@ class App extends Component {
 
         {/* <Usestapro category='Personal' /> */}
 
-        <Listtyp lists={list} />
+        {/* <Listtyp lists={list} address={addr} name={naArr} /> */}
+
+        <Child styles={{color: 'red'}}> This is children data </Child>
 
       </div>
     );
