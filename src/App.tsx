@@ -1,6 +1,7 @@
 import React from 'react';
 import CallArrprop from './FuncCompo/CallArrprop';
 import New from './FuncCompo/New';
+import Prolist from './FuncCompo/Prolist';
 
 const App = () => {
 
@@ -14,10 +15,35 @@ const App = () => {
 
       let ar = ["ankit" , "upadhyay" , "varanasi" , "sundarpur"]
 
+      let Full = {
+        fname: "Bruce",
+        lname: "Wayne",
+      }
+
+      let full = [
+        {
+          first: "Bruce",
+          last: "Wayne"
+        },
+        {
+          first: "Peter",
+          last: "Parker"
+        },
+        {
+          first: "Captain",
+          last: "America"
+        },
+        {
+          first: "Iron",
+          last: "Man"
+        },
+      ]
+
   return (
     <div>
       <New lists={list} />
-      <CallArrprop category={ar} isBool={false} />
+      <CallArrprop category={ar} isBool={true} name={Full} />
+      <Prolist names={full} />
     </div>
   );
 };
