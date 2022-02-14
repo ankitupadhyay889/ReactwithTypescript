@@ -4,7 +4,7 @@ import Advanceprop from './Advanceprop';
 const Calling = () => {
     return (
         <div>
-            <Advanceprop status='error' />
+            <Advanceprop status='error'> Ankit </Advanceprop>
         </div>
     );
 };

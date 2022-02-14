@@ -1,7 +1,8 @@
 import React from 'react';
 
 type CheckSta = {
-    status: 'loading' | 'success' | 'error'
+    status: 'loading' | 'success' | 'error',
+    children: string
 }
 
 const Advanceprop = (props: CheckSta) => {
@@ -18,6 +19,7 @@ const Advanceprop = (props: CheckSta) => {
     return (
         <div>
             <h1> Status - {message} </h1>
+            <h1> {props.children} </h1>
         </div>
     );
 };
