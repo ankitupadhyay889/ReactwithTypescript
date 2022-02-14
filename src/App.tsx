@@ -4,6 +4,7 @@ import CallArrprop from './FuncCompo/CallArrprop';
 import Calling from './FuncCompo/Calling';
 import New from './FuncCompo/New';
 import Proplist from './FuncCompo/Proplist';
+import Callst from './FuncCompo/state/Callst';
 
 const App = () => {
 
@@ -52,6 +53,8 @@ const App = () => {
       <Proplist names={full} />
 
       <Calling />
+
+      <Callst />
     </div>
   );
 };
