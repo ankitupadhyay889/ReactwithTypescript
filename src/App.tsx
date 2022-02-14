@@ -1,9 +1,10 @@
 import React from 'react';
+import CallArrprop from './FuncCompo/CallArrprop';
 import New from './FuncCompo/New';
 
 const App = () => {
 
-      let lists = [
+      let list = [
       {
         name:"Ankit",
         address: "N3/75",
@@ -11,9 +12,12 @@ const App = () => {
       }
     ]
 
+      let ar = ["ankit" , "upadhyay" , "varanasi" , "sundarpur"]
+
   return (
     <div>
-      <New lists={lists} />
+      <New lists={list} />
+      <CallArrprop category={ar} />
     </div>
   );
 };
