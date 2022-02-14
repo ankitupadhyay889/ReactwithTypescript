@@ -12,8 +12,8 @@ const New = (props:Listpro) => {
     return (
         <div>
             <li> {props.lists[0].name} </li>
-            <li> {props.lists[1].address} </li>
-            <li> {props.lists[2].phonenumber} </li>
+            <li> {props.lists[0].address} </li>
+            <li> {props.lists[0].phonenumber} </li>
         </div>
     );
 };
