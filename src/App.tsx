@@ -4,7 +4,7 @@ import CallArrprop from './FuncCompo/CallArrprop';
 import Calling from './FuncCompo/Calling';
 import New from './FuncCompo/New';
 import Proplist from './FuncCompo/Proplist';
-import Callst from './FuncCompo/state/Callst';
+import Callstat from './FuncCompo/state/Callstat';
 
 const App = () => {
 
@@ -54,7 +54,7 @@ const App = () => {
 
       <Calling />
 
-      <Callst />
+      <Callstat />
     </div>
   );
 };
