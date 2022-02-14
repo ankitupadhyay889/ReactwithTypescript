@@ -1,13 +1,16 @@
 import React from 'react';
 
 type greT = {
-    category: Array<any>
+    category: Array<any>,
+    isBool: Boolean
 }
 
 const CallArrprop = (props:greT) => {
     return (
         <div>
-            <p> {props.category[0]} ----- {props.category[1]} ------  {props.category[4]} </p>
+            <p>{ props.isBool ? `Welcome ${props.category[0]} ----- ${props.category[1]} and you are logged in and address is
+            
+            ------ ${props.category[2]}` : "Welcome as guest"  } </p>
         </div>
     );
 };

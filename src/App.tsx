@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div>
       <New lists={list} />
-      <CallArrprop category={ar} />
+      <CallArrprop category={ar} isBool={false} />
     </div>
   );
 };
