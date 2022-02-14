@@ -6,7 +6,7 @@ type Lis = {
         last: string
     }[]
 }
-const Prolist = (props: Lis) => {
+const Proplist = (props: Lis) => {
     return (
         <div>
             {
@@ -20,4 +20,4 @@ const Prolist = (props: Lis) => {
     );
 };
 
-export default Prolist;
+export default Proplist;

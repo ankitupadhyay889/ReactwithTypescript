@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css"
 import CallArrprop from './FuncCompo/CallArrprop';
 import New from './FuncCompo/New';
-import Prolist from './FuncCompo/Prolist';
+import Proplist from './FuncCompo/Proplist';
 
 const App = () => {
 
@@ -48,7 +48,7 @@ const App = () => {
     <div className='App'>
       <New lists={list} />
       <CallArrprop category={ar} isBool={true} name={Full} />
-      <Prolist names={full} />
+      <Proplist names={full} />
     </div>
   );
 };
