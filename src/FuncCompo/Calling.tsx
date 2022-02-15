@@ -1,7 +1,7 @@
 import React from 'react';
 import Eventprop from './Eventprop';
 import Inpt from './Inpt';
-import TodoL from './state/TodoL';
+import Todo from './state/Todo';
 import Styl from './Styl';
 // import Advanceprop from './Advanceprop';
 
@@ -16,7 +16,7 @@ const Calling = () => {
 
             <Styl />
 
-            <TodoL />
+            <Todo />
         </div>
     );
 };
