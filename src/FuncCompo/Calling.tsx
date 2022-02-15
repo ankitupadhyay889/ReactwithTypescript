@@ -1,7 +1,8 @@
 import React from 'react';
+import Simpleform from './state/Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
-import Couter from './state/Couter';
+// import Couter from './state/Couter';
 // import Todou from './state/Todou';
 // import Styl from './Styl';
 // import Advanceprop from './Advanceprop';
@@ -19,7 +20,9 @@ const Calling = () => {
 
             {/* <Todou /> */}
 
-            <Couter />
+            {/* <Couter /> */}
+
+            <Simpleform />
         </div>
     );
 };
