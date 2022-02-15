@@ -7,7 +7,7 @@ type Todo = {
 
 let count = 1
 
-const Todo = () => {
+const Todou = () => {
     const [item, setitem] = useState<Todo[]>([{id: 0 , value: ''}])
 
     const hanCha = (value: string, id: Todo['id']) => {
@@ -36,4 +36,4 @@ const Todo = () => {
     );
 };
 
-export default Todo;
+export default Todou;

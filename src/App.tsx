@@ -1,60 +1,60 @@
 import React from 'react';
 import "./App.css"
-import CallArrprop from './FuncCompo/CallArrprop';
+// import CallArrprop from './FuncCompo/CallArrprop';
 import Calling from './FuncCompo/Calling';
-import New from './FuncCompo/New';
-import Proplist from './FuncCompo/Proplist';
-import Callstat from './FuncCompo/state/Callstat';
+// import New from './FuncCompo/New';
+// import Proplist from './FuncCompo/Proplist';
+// import Callstat from './FuncCompo/state/Callstat';
 
 const App = () => {
 
-      let list = [
-      {
-        name:"Ankit",
-        address: "N3/75",
-        phonenumber: 7845896548
-      }
-    ]
+    //   let list = [
+    //   {
+    //     name:"Ankit",
+    //     address: "N3/75",
+    //     phonenumber: 7845896548
+    //   }
+    // ]
 
-      let ar = ["ankit" , "upadhyay" , "varanasi" , "sundarpur"]
+    //   let ar = ["ankit" , "upadhyay" , "varanasi" , "sundarpur"]
 
-      let Full = {
-        fname: "Bruce",
-        lname: "Wayne",
-      }
+    //   let Full = {
+    //     fname: "Bruce",
+    //     lname: "Wayne",
+    //   }
 
-      let full = [
-        {
-          first: "Bruce",
-          last: "Wayne"
-        },
-        {
-          first: "Peter",
-          last: "Parker"
-        },
-        {
-          first: "Captain",
-          last: "America"
-        },
-        {
-          first: "Iron",
-          last: "Man"
-        },
-        {
-          first: "Gautam",
-          last: "Gambhir"
-        },
-      ]
+    //   let full = [
+    //     {
+    //       first: "Bruce",
+    //       last: "Wayne"
+    //     },
+    //     {
+    //       first: "Peter",
+    //       last: "Parker"
+    //     },
+    //     {
+    //       first: "Captain",
+    //       last: "America"
+    //     },
+    //     {
+    //       first: "Iron",
+    //       last: "Man"
+    //     },
+    //     {
+    //       first: "Gautam",
+    //       last: "Gambhir"
+    //     },
+    //   ]
 
   return (
     <div className='App'>
-      <New lists={list} />
-      <CallArrprop category={ar} isBool={true} name={Full} />
-      <Proplist names={full} />
+      {/* <New lists={list} /> */}
+      {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
+      {/* <Proplist names={full} /> */}
 
       <Calling />
 
-      <Callstat />
+      {/* <Callstat /> */}
     </div>
   );
 };
