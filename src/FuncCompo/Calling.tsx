@@ -1,5 +1,5 @@
 import React from 'react';
-import Newtodo from './state/Newtodo';
+import Newtodo from './Newtodo';
 // import Simpleform from './state/Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';

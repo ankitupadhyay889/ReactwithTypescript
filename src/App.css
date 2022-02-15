@@ -1,6 +1,17 @@
 .App {
   text-align: center;
   margin-top: 25px;
+  background-color: bisque;
+}
+
+.Ko {
+  text-align: center;
+  margin-top: 25px;
+  background-color: rgb(153, 177, 197);
+  margin-left: 800px;
+  margin-right: 850px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .App-logo {
