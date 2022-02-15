@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Simpleform = () => {
 
-    const [name, setname] = useState<string>("");
+    const [name, setname] = useState("");
     const [show, setshow] = useState<Array<any>>([])
 
     const sub = (e:any) => {
