@@ -25,8 +25,8 @@ class Day1 extends Component <CountProp,CounterState> {
     return (
       <div>
         {this.props.message}
-        <button onClick={this.hClick} >Increment</button>
-        <button onClick={this.oClick}>Decrement</button>
+        <button onClick={this.hClick} > + </button>
+        <button onClick={this.oClick}> - </button>
         {this.state.count}
       </div>
     );
