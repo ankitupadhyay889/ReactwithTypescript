@@ -1,5 +1,6 @@
 import React from 'react';
-import Newtodo from './Newtodo';
+import Userregis from './state/Userregis';
+// import Newtodo from './Newtodo';
 // import Simpleform from './state/Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
@@ -25,7 +26,9 @@ const Calling = () => {
 
             {/* <Simpleform /> */}
 
-            <Newtodo />
+            {/* <Newtodo /> */}
+
+            <Userregis />
         </div>
     );
 };
