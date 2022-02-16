@@ -6,6 +6,7 @@ type Cosa = {
 
 class Newda extends Component<{} , Cosa> {
 
+    // setstate method
     co = () => {
         this.setState({time: new Date()})
     }
@@ -16,7 +17,7 @@ class Newda extends Component<{} , Cosa> {
     }
 
     componentDidMount() {
-        setInterval(() => this.co() , 1000)
+        setInterval(() => this.co() , 2000)
     }
 
     render() {

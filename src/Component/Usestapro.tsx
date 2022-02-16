@@ -5,12 +5,12 @@ type MainState = {
     email: string;
 }
 
-type MainProp = {
+type MainPrp = {
     category: string;
 }
 
-export default class Usestapro extends Component<MainProp , MainState> {
-    constructor(props:MainProp) {
+export default class Usestapro extends Component<MainPrp , MainState> {
+    constructor(props:MainPrp) {
       super(props)
         this.state = {
          name: "Ankit",
