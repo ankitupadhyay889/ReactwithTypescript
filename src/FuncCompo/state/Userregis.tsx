@@ -1,11 +1,19 @@
 import React, { ChangeEvent, useState } from 'react';
+import { TextField , Button } from '@mui/material';
 
-const Userregis = () => {
+type sty = {
+    styl: React.CSSProperties
+}
+
+const Userregis = (props: sty) => {
 
     const [useRegis, setuseRegis] = useState({
         fname: "",
         lname: "",
+        pnumber: "",
         email: "",
+        address: "",
+        qualification: ""
     })
 
     const [store, setstore] = useState<Array<any>>([])
@@ -21,40 +29,51 @@ const Userregis = () => {
         e.preventDefault();
         const all = {...useRegis};
         setstore([...store , all]);
-        setuseRegis({fname: "" , lname: "" , email: ""});
+        setuseRegis({fname: "" , lname: "" , pnumber: "" , email: "" , address: "" , qualification: ""});
     }
 
     return (
         <div>
+            <h2 style = {props.styl} > Normal Registration Form in React with Typscript and Material Ui </h2>
+            <hr></hr>
+            <br/>
             <form onSubmit={subKa}>
-                <label htmlFor="username">FirstName : </label>
-                <input type="text" name="fname" autoComplete="off" value={useRegis.fname} onChange={hanInp} />
+                <TextField type="text" id="standard-basic" label="Enter First Name" variant="filled" name="fname" autoComplete="off" value={useRegis.fname} onChange={hanInp} />
                 
                 <br/><br/>
 
-                <label htmlFor="email">LastName : </label>
-                <input type="text" name="lname" autoComplete="off" value={useRegis.lname} onChange={hanInp} />
+                <TextField type="text" id="standard-basic" label="Enter Last Name" variant="filled" name="lname" autoComplete="off" value={useRegis.lname} onChange={hanInp} />
 
                 <br/><br/>
 
-                <label htmlFor="password">Email : </label>
-                <input type="text" name="email" autoComplete="off" value={useRegis.email} onChange={hanInp} />
+                <TextField type="number" id="standard-basic" label="Enter Phone Number" variant="filled" name="pnumber" autoComplete="off" value={useRegis.pnumber} onChange={hanInp} />
 
                 <br/><br/>
 
-                <button type="submit"> Register </button>
+                <TextField type="email" id="standard-basic" label="Enter Email Address" variant="filled" name="email" autoComplete="off" value={useRegis.email} onChange={hanInp} />
+
+                <br/><br/>
+
+                <TextField type="text" id="standard-basic" label="Enter Permanent Address" variant="filled" name="address" autoComplete="off" value={useRegis.address} onChange={hanInp} />
+
+                <br/><br/>
+
+                <TextField type="text" id="standard-basic" label="Enter Highest Qualification" variant="filled" name="qualification" autoComplete="off" value={useRegis.qualification} onChange={hanInp} />
+
+                <br/><br/>
+
+                <Button type="submit" variant="outlined"> iConfirm </Button>
 
             </form>
 
             <div>
                 {
                     store.map((curElem , id: number) => {
-                        const {fname , lname , email} = curElem
+                        const {fname , lname , pnumber , email , address , qualification} = curElem
                         return(
                             <div key={id}>
-                                <h1> {fname} </h1>
-                                <h1> {lname} </h1>
-                                <h1> {email} </h1>
+                                <li><h3>Name is {fname}{lname}, mobile number {pnumber}, mail is {email},
+                                 permanent address is {address}, and highest qualification {qualification}</h3></li>
                             </div>
                         )
                     })

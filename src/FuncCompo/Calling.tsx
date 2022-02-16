@@ -28,7 +28,7 @@ const Calling = () => {
 
             {/* <Newtodo /> */}
 
-            <Userregis />
+            <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} />
         </div>
     );
 };
