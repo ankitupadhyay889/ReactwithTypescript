@@ -1,40 +1,38 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
 
 const Userregis = () => {
 
-    const [name, setname] = useState<string>("");
-    const [show, setshow] = useState<Array<any>>([])
+    const [useRegis, setuseRegis] = useState({
+        fname: "",
+        lname: "",
+        email: "",
+    })
 
-    const sub = (e:any) => {
-        e.preventDefault();
-        const all = {name:name};
-        setshow([...show , all]);
-        setname("");
-    }
+    const hanInp = () => {}
 
-    const haC = (e:ChangeEvent<HTMLInputElement>) => {
-        setname(e.currentTarget.value)
-    }
+    const subKa = () => {}
 
     return (
         <div>
-            <form onSubmit={sub}>
-                <label> Enter name: </label> 
-                <input type="text" name="name" autoComplete="off" value={name} onChange={haC} />
-                <br/>
-                <button type="submit">Submit</button>
+            <form onSubmit={subKa}>
+                <label htmlFor="username">FullName : </label>
+                <input type="text" name="fname" autoComplete="off" value={useRegis.fname} onChange={hanInp} />
+                
+                <br/><br/>
+
+                <label htmlFor="email">Email id : </label>
+                <input type="text" name="lname" autoComplete="off" value={useRegis.lname} onChange={hanInp} />
+
+                <br/><br/>
+
+                <label htmlFor="password">Password : </label>
+                <input type="text" name="email" autoComplete="off" value={useRegis.email} onChange={hanInp} />
+
+                <br/><br/>
+
+                <button type="submit"> Register </button>
+
             </form>
-            <div>
-                {
-                    show.map((curEl:any , id:number) => {
-                        return(
-                            <div key={id}>
-                                <p> {curEl.name} </p>
-                            </div>
-                        )
-                    })
-                }
-            </div>
         </div>
     );
 };

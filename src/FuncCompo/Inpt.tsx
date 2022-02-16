@@ -8,8 +8,7 @@ type Inp = {
 const Inpt = (props: Inp) => {
 
     const hanC = (event: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(event);
-        
+        console.log("This is input event in state" + event);
     }
 
     return (

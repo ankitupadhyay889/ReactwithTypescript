@@ -11,9 +11,9 @@ type Listpro = {
 const New = (props:Listpro) => {
     return (
         <div>
-            <li> {props.lists[0].name} </li>
-            <li> {props.lists[0].address} </li>
-            <li> {props.lists[0].phonenumber} </li>
+            <ul> {props.lists[0].name} </ul>
+            <ul> {props.lists[0].address} </ul>
+            <ul> {props.lists[0].phonenumber} </ul>
         </div>
     );
 };
