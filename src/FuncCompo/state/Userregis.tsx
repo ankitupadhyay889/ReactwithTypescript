@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 
 const Userregis = () => {
 
-    const [name, setname] = useState<Object<any>>({});
+    const [name, setname] = useState<string>("");
     const [show, setshow] = useState<Array<any>>([])
 
     const sub = (e:any) => {
@@ -12,7 +12,7 @@ const Userregis = () => {
         setname("");
     }
 
-    const haC = (e:any) => {
+    const haC = (e:ChangeEvent<HTMLInputElement>) => {
         setname(e.currentTarget.value)
     }
 
