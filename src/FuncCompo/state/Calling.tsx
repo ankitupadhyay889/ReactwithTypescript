@@ -1,12 +1,12 @@
 import React from 'react';
-import Iuser from './Iuser';
+// import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
 // import Simpleform from './state/Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
-// import Couter from './state/Couter';
+import Couter from './Couter';
 // import Todou from './state/Todou';
 // import Styl from './Styl';
 // import Advanceprop from './Advanceprop';
@@ -24,7 +24,7 @@ const Calling = () => {
 
             {/* <Todou /> */}
 
-            {/* <Couter /> */}
+            <Couter />
 
             {/* <Simpleform /> */}
 
@@ -34,7 +34,7 @@ const Calling = () => {
 
             {/* <Form /> */}
 
-            <Iuser />
+            {/* <Iuser /> */}
         </div>
     );
 };
