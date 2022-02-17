@@ -1,32 +1,60 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
+import { TextField , Button } from '@mui/material';
+import * as Yup from 'yup';
 
 const Form = () => {
 
-    const [name, setname] = useState("");
+    const [data, setdata] = useState<any>(() => Yup.object().shape({
+        fullname: Yup.string().required('Fullname is required'),
+        username: Yup.string().required('Username is required').min(6, 'Username must be at least 6 characters').max(20, 'Username must not exceed 20 characters'),
+        email: Yup.string().required('Email is required').email('Email is invalid'),
+    }));
 
-    const [entry, setentry] = useState<Array<any>>([]);
+    const [show, setshow] = useState<Array<any>>([]);
+
+    const hanInp = (e: any) => {
+        const name = e.currentTarget.name;
+        const value = e.currentTarget.value;
+
+        setdata({...data , [name]:value })
+    }
 
     const Sub = (e: any) =>{
         e.preventDefault();
-        const all = {name:name};
-        setentry([...entry , all]);
-        setname("");
+        const sbhi = {...data};
+        setshow([...show , sbhi]);
+        setdata({fullname: "" , username: "" , email: ""});
     }
 
     return (
         <div>
             <form onSubmit={Sub}>
-                <input type="text" name="name" autoComplete="off" value={name} onChange={(e)=>setname(e.target.value)} />
-                <br/>
-                <button type="submit">Submit</button>
+                <TextField type="text" id="standard-basic" label="Enter FullName" variant="filled"
+                name="fullname" autoComplete="off" value={data.fullname} onChange={hanInp} />
+                
+                <br/><br/>
+
+                <TextField type="text" id="standard-basic" label="Enter Username" variant="filled"
+                name="username" autoComplete="off" value={data.username} onChange={hanInp} />
+                
+                <br/><br/>
+
+                <TextField type="text" id="standard-basic" label="Enter Email" variant="filled"
+                name="email" autoComplete="off" value={data.email} onChange={hanInp} />
+                
+                <br/><br/>
+
+                <Button type="submit" variant="outlined"> Register </Button>
+
             </form>
             <div>
                 {
-                    entry.map((curEl , id)=>{
+                    show.map((curElem , id: number) => {
+                        const {fullname , username , email} = curElem
                         return(
-                        <div key={id}>
-                            <p> {curEl.name} </p>
-                        </div>
+                            <div key={id}>
+                                <h2> {fullname} -- {username} -- {email} </h2>
+                            </div>
                         )
                     })
                 }

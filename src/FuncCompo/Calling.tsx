@@ -1,5 +1,6 @@
 import React from 'react';
-import Userregis from './state/Userregis';
+import Form from './state/Form';
+// import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
 // import Simpleform from './state/Simpleform';
 // import Eventprop from './Eventprop';
@@ -28,7 +29,9 @@ const Calling = () => {
 
             {/* <Newtodo /> */}
 
-            <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} />
+            {/* <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} /> */}
+
+            <Form />
         </div>
     );
 };
