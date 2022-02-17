@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './state/Form';
+// import Form from './state/Form';
 // import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
 // import Simpleform from './state/Simpleform';
@@ -31,7 +31,7 @@ const Calling = () => {
 
             {/* <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} /> */}
 
-            <Form />
+            {/* <Form /> */}
         </div>
     );
 };
