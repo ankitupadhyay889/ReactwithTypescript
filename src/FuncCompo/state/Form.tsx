@@ -1,16 +1,12 @@
 import React, { ChangeEvent, useState } from 'react';
 
-type fom = {
-    name: string;
-}
-
 const Form = () => {
 
-    const [name, setname] = useState<fom>("");
+    const [name, setname] = useState("");
 
-    const [entry, setentry] = useState<Array<string>>([]);
+    const [entry, setentry] = useState<Array<any>>([]);
 
-    const Sub = (e:React.ChangeEvent<HTMLInputElement>) =>{
+    const Sub = (e: any) =>{
         e.preventDefault();
         const all = {name:name};
         setentry([...entry , all]);
