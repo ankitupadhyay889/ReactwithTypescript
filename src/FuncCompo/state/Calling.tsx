@@ -1,4 +1,5 @@
 import React from 'react';
+import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
@@ -32,6 +33,8 @@ const Calling = () => {
             {/* <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} /> */}
 
             {/* <Form /> */}
+
+            <Iuser />
         </div>
     );
 };

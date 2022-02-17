@@ -1,7 +1,7 @@
 import React from 'react';
 import "./App.css"
-// import CallArrprop from './FuncCompo/CallArrprop';
-import Calling from './FuncCompo/Calling';
+import Calling from './FuncCompo/state/Calling';
+// import CallArrprop./FuncCompo/state/Callingrrprop';
 // import New from './FuncCompo/New';
 // import Proplist from './FuncCompo/Proplist';
 // import Callstat from './FuncCompo/state/Callstat';
