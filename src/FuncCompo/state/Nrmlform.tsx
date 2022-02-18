@@ -24,7 +24,7 @@ const Nrmlform = () => {
         <div>
             <form onSubmit={sub}>
                 <h1> {show} </h1>
-                <label> Enter name: </label> 
+                <label htmlFor="name"> Enter name: </label> 
                 <input className='form-control' type="text" name="name" autoComplete="off" value={name} onChange={haC} />
                 <br/>
                 <button type="submit">Submit</button>
