@@ -5,10 +5,10 @@ const ApiCall = () => {
     const [covid, setcovid] = useState<Array<any>>([])
 
     const getCovid = async() => {
-        const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const res = await fetch("https://fakestoreapi.com/products");
         const data = await res.json();
         console.log(data);
-        // setcovid(data.statewise);
+        setcovid(data);
     }
 
     useEffect(() => {
@@ -19,19 +19,15 @@ const ApiCall = () => {
     return (
         <div>
             {
-                        covid.map((item , id) => {
-                            return(
-                                <h1 key={id}>
-                                    <li> {item.state} </li>
-                                    {/* <td> {item.confirmed} </td>
-                                    <td> {item.recovered} </td>
-                                    <td> {item.deaths} </td>
-                                    <td> {item.active} </td>
-                                    <li> {item.lastupdatedtime} </li> */}
-                                </h1>
-                            )
-                        })
-                    }      
+                covid.map((item , id) => {
+                    return(
+                        <div key={id}>
+                            <li> {item.title} </li>
+                            <p><img style={{height: "50px"}} src={item.image} alt="im" /></p>
+                        </div> 
+                    )
+                })
+            }      
         </div>
     );
 };
