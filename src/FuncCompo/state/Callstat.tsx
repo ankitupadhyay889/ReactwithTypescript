@@ -1,13 +1,13 @@
 import React from 'react';
-import Staecall from './Staecall';
-// import Userlog from './Userlog';
+// import Staecall from './Staecall';
+import Userlog from './Userlog';
 
 const Callstat = () => {
     return (
         <div>
             <p> Ankit </p>
-            <Staecall />
-            {/* <Userlog /> */}
+            {/* <Staecall /> */}
+            <Userlog />
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
-import Nrmlform from './Nrmlform';
+// import Conditionsl from './Conditionsl';
+// import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
@@ -37,7 +38,9 @@ const Calling = () => {
 
             {/* <Iuser /> */}
 
-            <Nrmlform />
+            {/* <Nrmlform /> */}
+
+            {/* <Conditionsl /> */}
         </div>
     );
 };
