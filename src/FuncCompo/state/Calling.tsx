@@ -1,4 +1,5 @@
 import React from 'react';
+import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
@@ -6,7 +7,7 @@ import React from 'react';
 // import Simpleform from './state/Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
-import Couter from './Couter';
+// import Couter from './Couter';
 // import Todou from './state/Todou';
 // import Styl from './Styl';
 // import Advanceprop from './Advanceprop';
@@ -24,7 +25,7 @@ const Calling = () => {
 
             {/* <Todou /> */}
 
-            <Couter />
+            {/* <Couter /> */}
 
             {/* <Simpleform /> */}
 
@@ -35,6 +36,8 @@ const Calling = () => {
             {/* <Form /> */}
 
             {/* <Iuser /> */}
+
+            <Nrmlform />
         </div>
     );
 };

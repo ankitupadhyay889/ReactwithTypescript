@@ -20,7 +20,7 @@ const Nrmlform = () => {
             <form onSubmit={sub}>
                 <h1> {show} </h1>
                 <label> Enter name: </label> 
-                <input type="text" name="name" autoComplete="off" value={name} onChange={haC} />
+                <input className='form-control' type="text" name="name" autoComplete="off" value={name} onChange={haC} required />
                 <br/>
                 <button type="submit">Submit</button>
             </form>
