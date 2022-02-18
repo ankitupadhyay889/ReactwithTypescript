@@ -3,7 +3,7 @@ import React from 'react';
 const Styl = () => {
     return (
         <div>
-            <h1 style={{color:"red" , padding: "1rem"}}> Ankit </h1>
+            <h1 style={{color: "red" , margin: "1rem" , padding: "1rem"}}> Ankit </h1>
         </div>
     );
 };
