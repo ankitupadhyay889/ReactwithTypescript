@@ -1,28 +1,23 @@
-import React from 'react';
-// import {useQuery} from 'react-query';
-
-const fetU = async () => {
-    await new Promise((re) => setTimeout(re , 1000));
-    return "Data";
-}
+import React, { useState } from 'react';
 
 const Conditionsl = () => {
 
-    // const {data , isError , isFetching} = useQuery("fetch Data" , fetU)
+    const [log, setlog] = useState(false)
 
-    // const renDat = () => {
-    //     if(isFetching){
-    //         return <div>Data is fetching</div>
-    //     }else if(isError){
-    //         return <div>Error</div>
-    //     }else{
-    //         return <div>{data}</div>
-    //     }
-    // }
+    const li = () => {
+        setlog(true)
+    }
+
+    const lo = () => {
+        setlog(false)
+    }
 
     return (
         <div>
-            
+            <button onClick={li}> LogIn </button>
+            <br/><br/>
+            <button onClick={lo}> LogOut </button>
+            <h1> User is {log ? `logged in` : 'logged out'} </h1>
         </div>
     );
 };
