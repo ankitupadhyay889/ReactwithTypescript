@@ -5,6 +5,8 @@ type authU = {
     email: string;
 }
 
+// normal string bhi likh skte ho
+
 const Userlog = () => {
 
     const [user, setuser] = useState<authU | null> (null)
@@ -22,9 +24,9 @@ const Userlog = () => {
 
     return (
         <div>
-            <button onClick={li}> LogIn </button>
+            <button onClick={li}> Log In </button>
             <br/>
-            <button onClick={lo}> LogOut </button>
+            <button onClick={lo}> Log Out </button>
             <br/>
             <div> User name is {user?.name} </div>
             <div> User email is {user?.email} </div>
