@@ -19,7 +19,7 @@ const Useefct = () => {
     return (
         <div>
             {
-                load?<h1>Loading...</h1>:data.map((item,i)=>{
+                load?<h2>Loading...</h2>:data.map((item,i)=>{
                     <div> {item.country} </div>
                 })
             }
