@@ -13,7 +13,8 @@ const Userregis = (props: sty) => {
         pnumber: "",
         email: "",
         address: "",
-        qualification: ""
+        qualification: "",
+        age: 0,
     })
 
     const [store, setstore] = useState<Array<any>>([])
@@ -29,7 +30,7 @@ const Userregis = (props: sty) => {
         e.preventDefault();
         const all = {...useRegis};
         setstore([...store , all]);
-        setuseRegis({fname: "" , lname: "" , pnumber: "" , email: "" , address: "" , qualification: ""});
+        setuseRegis({fname: "" , lname: "" , pnumber: "" , email: "" , address: "" , qualification: "" ,age: 0});
     }
 
     return (
@@ -62,6 +63,10 @@ const Userregis = (props: sty) => {
 
                 <br/><br/>
 
+                <TextField type="number" id="standard-basic" label="Enter Age" variant="filled" name="age" autoComplete="off" value={useRegis.age} onChange={hanInp} />
+
+                <br/><br/>
+
                 <Button type="submit" variant="outlined"> iConfirm </Button>
 
             </form>
@@ -69,11 +74,11 @@ const Userregis = (props: sty) => {
             <div>
                 {
                     store.map((curElem , id: number) => {
-                        const {fname , lname , pnumber , email , address , qualification} = curElem
+                        const {fname , lname , pnumber , email , address , qualification , age} = curElem
                         return(
                             <div key={id}>
                                 <li><h3>Name is {fname}{lname}, mobile number {pnumber}, mail is {email},
-                                 permanent address is {address}, and highest qualification {qualification}</h3></li>
+                                 permanent address is {address}, and highest qualification {qualification} and age is {age}</h3></li>
                             </div>
                         )
                     })
