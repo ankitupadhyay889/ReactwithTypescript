@@ -27,7 +27,7 @@ const Iuser = () => {
     return (
         <div>
             <form>
-                <label htmlFor='name'> Enter name: </label> 
+                <label> Enter name: </label> 
                 <input type="text" name="fname" autoComplete="off" value={data.fname} onChange={haC} />
                 <br/>
                 <input type="text" name="lname" autoComplete="off" value={data.lname} onChange={haC} />
