@@ -5,6 +5,7 @@ type Todo = {
     value: string;
 }
 
+
 let count = 1
 
 const Todou = () => {
@@ -27,7 +28,7 @@ const Todou = () => {
                     return(
                         <div key={ind}>
                             <input type="text" value={it.value} onChange={e => hanCha(e.currentTarget.value, it.id)} />
-                            <button onClick={() => hanA(ind)}>Add</button>
+                            <button onClick={() => hanA(ind)}> Add </button>
                         </div>
                     )
                 })
