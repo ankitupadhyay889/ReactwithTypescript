@@ -7,7 +7,8 @@ import "../App.css"
 const Newtodo = () => {
 
     const [input, setinput] = useState<string>("")
-    const [show, setshow] = useState<Array<any>>([])
+    // const [show, setshow] = useState<Array<any>>([])
+    const [show, setshow] = useState<string[]>([])
 
     const add = () => {
         if(!input){

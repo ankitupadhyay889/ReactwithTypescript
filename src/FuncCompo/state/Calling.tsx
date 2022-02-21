@@ -2,12 +2,12 @@ import React from 'react';
 // import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
-import Nrmlform from './Nrmlform';
+// import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
-// import Simpleform from './state/Simpleform';
+import Simpleform from './Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
 // import Couter from './Couter';
@@ -30,7 +30,7 @@ const Calling = () => {
 
             {/* <Couter /> */}
 
-            {/* <Simpleform /> */}
+            <Simpleform />
 
             {/* <Newtodo /> */}
 
@@ -40,7 +40,7 @@ const Calling = () => {
 
             {/* <Iuser /> */}
 
-            <Nrmlform />
+            {/* <Nrmlform /> */}
 
             {/* <Conditionsl /> */}
 

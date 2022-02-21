@@ -2,25 +2,25 @@ import React, { useState } from 'react';
 
 const Simpleform = () => {
 
-    const [name, setname] = useState<any>("");
+    const [dt, setdt] = useState("");
     const [show, setshow] = useState<Array<any>>([])
 
     const sub = (e:any) => {
         e.preventDefault();
-        const all = {name:name};
+        const all = {data:dt};
         setshow([...show , all]);
-        setname("");
+        setdt("");
     }
 
     const haC = (e:any) => {
-        setname(e.currentTarget.value)
+        setdt(e.currentTarget.value)
     }
 
     return (
         <div>
             <form onSubmit={sub}>
                 <label> Enter name: </label> 
-                <input type="text" name="name" autoComplete="off" value={name} onChange={haC} />
+                <input type="text" name="name" value={dt} onChange={haC} />
                 <br/>
                 <button type="submit">Submit</button>
             </form>
