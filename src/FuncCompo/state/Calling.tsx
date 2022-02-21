@@ -1,4 +1,5 @@
 import React from 'react';
+import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
 // import Nrmlform from './Nrmlform';
@@ -44,6 +45,8 @@ const Calling = () => {
             {/* <Conditionsl /> */}
 
             {/* <ApiCall /> */}
+
+            <Multiitem />
         </div>
     );
 };
