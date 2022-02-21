@@ -5,6 +5,7 @@ type Todo = {
     value: string;
 }
 
+// props me shi todo list app hai
 
 let count = 1
 
