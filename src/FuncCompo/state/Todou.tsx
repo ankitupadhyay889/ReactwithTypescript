@@ -5,7 +5,7 @@ type Todo = {
     value: string;
 }
 
-// props me shi todo list app hai
+// props me shi todo list app hai or if you want then direct update
 
 let count = 1
 
