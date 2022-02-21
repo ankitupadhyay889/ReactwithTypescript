@@ -67,7 +67,7 @@ const Userregis = (props: sty) => {
 
                 <br/><br/>
 
-                <Button type="submit" variant="outlined"> iConfirm </Button>
+                <Button type="submit" variant="outlined"> Submit </Button>
 
             </form>
 
