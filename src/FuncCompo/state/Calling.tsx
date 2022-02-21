@@ -1,8 +1,8 @@
 import React from 'react';
-import Multiitem from './Multiitem';
+// import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
-// import Nrmlform from './Nrmlform';
+import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
@@ -40,13 +40,13 @@ const Calling = () => {
 
             {/* <Iuser /> */}
 
-            {/* <Nrmlform /> */}
+            <Nrmlform />
 
             {/* <Conditionsl /> */}
 
             {/* <ApiCall /> */}
 
-            <Multiitem />
+            {/* <Multiitem /> */}
         </div>
     );
 };
