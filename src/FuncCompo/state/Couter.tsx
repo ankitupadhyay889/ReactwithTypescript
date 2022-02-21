@@ -13,20 +13,20 @@ const Couter = () => {
     //     setcounter(counter + 1)
     // }, [])
 
-    // useEffect(() => {
-    //     console.log("y update p call hota rahega isko componentdidupdate bhi khte hai");
-    // }, [counter])
+    useEffect(() => {
+        console.log("y update p call hota rahega isko componentdidupdate bhi khte hai");
+    }, [counter])
 
     // useEffect(() => {
     //     console.log("hr baar y call hoga jb bhi state chnage hoga or refresh hoga browser"); ye jayeda use nhi krte hum
     // })
 
-    useEffect(() => {
-        console.log("unmount jb tum useeffect call kareoge toh y ata hai yaad karo or y hr baar ayega console p");
-        return()=>{
-            console.log("unmount");
-        }
-    }, [counter])
+    // useEffect(() => {
+    //     console.log("unmount jb tum useeffect call kareoge toh y ata hai yaad karo or y hr baar ayega console p");
+    //     return()=>{
+    //         console.log("unmount");
+    //     }
+    // }, [counter])
     
 
     const add = () => {
