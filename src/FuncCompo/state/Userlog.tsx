@@ -5,8 +5,6 @@ type authU = {
     email: string;
 }
 
-// normal string bhi likh skte ho
-
 const Userlog = () => {
 
     const [user, setuser] = useState<authU | null> (null)
