@@ -23,7 +23,7 @@ const ApiCall = () => {
                     return(
                         <div key={id}>
                             <li> {item.title} </li>
-                            <p><img style={{height: "50px"}} src={item.image} alt="im" /></p>
+                            <img style={{height: "50px"}} src={item.image} alt="im" />
                         </div> 
                     )
                 })
