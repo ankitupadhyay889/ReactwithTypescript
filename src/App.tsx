@@ -1,6 +1,7 @@
 import React from 'react';
 import "./App.css"
-import Calling from './FuncCompo/state/Calling';
+import Useefct from './FuncCompo/state/Useefct';
+// import Calling from './FuncCompo/state/Calling';
 // import CallArrprop./FuncCompo/state/Callingrrprop';
 // import New from './FuncCompo/New';
 // import Proplist from './FuncCompo/Proplist';
@@ -52,9 +53,11 @@ const App = () => {
       {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
       {/* <Proplist names={full} /> */}
 
-      <Calling />
+      {/* <Calling /> */}
 
       {/* <Callstat /> */}
+
+      <Useefct />
     </div>
   );
 };

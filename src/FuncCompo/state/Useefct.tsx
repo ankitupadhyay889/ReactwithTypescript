@@ -19,8 +19,13 @@ const Useefct = () => {
     return (
         <div>
             {
-                load?<h2>Loading...</h2>:data.map((item,i)=>{
-                    <div> {item.country} </div>
+                load?<h2>Loading...</h2>:data.map((item: any,i: number)=>{
+                    return(
+                        <div key={i}>
+                    <h3>Country: {item.country} , Death: {item.deaths} , Recovered: {item.recovered} , Active: {item.active} , Test: {item.tests} </h3>
+                    <img src={item.countryInfo.flag} alt="flag" />
+                        </div>
+                    )
                 })
             }
         </div>

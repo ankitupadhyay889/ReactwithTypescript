@@ -1,5 +1,5 @@
 import React from 'react';
-import ApiCall from './ApiCall';
+// import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
 // import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
@@ -43,7 +43,7 @@ const Calling = () => {
 
             {/* <Conditionsl /> */}
 
-            <ApiCall />
+            {/* <ApiCall /> */}
         </div>
     );
 };
