@@ -7,6 +7,8 @@ const deF = [
     { id: "4", value: "Surya" },
 ];
 
+// you also define obect in useState.
+
 const Multiitem = () => {
 
     const [multi, setmulti] = useState<Array<any>>(deF)
