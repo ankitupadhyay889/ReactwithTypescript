@@ -6,9 +6,9 @@ const ApiCall = () => {
 
     const getCovid = async() => {
         const res = await fetch("https://fakestoreapi.com/products");
-        const data = await res.json();
-        console.log(data);
-        setcovid(data);
+        const dat = await res.json();
+        console.log(dat);
+        setcovid(dat);
     }
 
     useEffect(() => {
