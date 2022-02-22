@@ -4,6 +4,9 @@ const ApiCall = () => {
 
     const [covid, setcovid] = useState<Array<any>>([])
 
+    // compulsory to call array
+    
+
     const getCovid = async() => {
         const res = await fetch("https://fakestoreapi.com/products");
         const dat = await res.json();
