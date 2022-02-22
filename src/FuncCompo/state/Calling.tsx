@@ -1,5 +1,5 @@
 import React from 'react';
-import First from '../customhook/First';
+import All from '../customhook/All';
 // import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
@@ -19,7 +19,7 @@ import First from '../customhook/First';
 const Calling = () => {
     return (
         <div>
-            <First />
+            <All />
 
             {/* <Advanceprop status='error'> Ankit </Advanceprop> */}
             {/* <Eventprop haC={(event , id) => {console.log(event , id); */}
