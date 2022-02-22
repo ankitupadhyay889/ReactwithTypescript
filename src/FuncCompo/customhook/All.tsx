@@ -1,13 +1,16 @@
 import React from 'react';
+import Third from './Third';
 // import First from './First';
-import Second from './Second';
+// import Second from './Second';
 
 const All = () => {
     return (
         <div>
             {/* <First /> */}
 
-            <Second />
+            {/* <Second /> */}
+
+            <Third />
         </div>
     );
 };

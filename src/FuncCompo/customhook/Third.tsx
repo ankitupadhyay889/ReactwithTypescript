@@ -1,20 +1,13 @@
-import React, { useState } from 'react';
-import { Button } from "@mui/material";
-import useChnage from './useChnage';
+import React from 'react';
+import { useChnage } from './useChnage';
 
 const Third = () => {
 
-    const [chan , setchan] = useChnage(false)
-    const op = () => {
-        setchan();
-    }
+    useChnage("Custom Hook" , "log with custom hook1")
 
     return (
         <div>
-            <h3>{chan}</h3>
-            <Button variant="contained" color="primary" onClick={op}>
-                Toggle
-            </Button>
+            <h1> Thired Commit Update error </h1>
         </div>
     );
 };
