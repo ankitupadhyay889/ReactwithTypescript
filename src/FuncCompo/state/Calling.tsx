@@ -1,4 +1,5 @@
 import React from 'react';
+import First from '../customhook/First';
 // import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
@@ -7,7 +8,7 @@ import React from 'react';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
-import Simpleform from './Simpleform';
+// import Simpleform from './Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
 // import Couter from './Couter';
@@ -18,6 +19,8 @@ import Simpleform from './Simpleform';
 const Calling = () => {
     return (
         <div>
+            <First />
+
             {/* <Advanceprop status='error'> Ankit </Advanceprop> */}
             {/* <Eventprop haC={(event , id) => {console.log(event , id); */}
             {/* }} /> */}
@@ -30,7 +33,7 @@ const Calling = () => {
 
             {/* <Couter /> */}
 
-            <Simpleform />
+            {/* <Simpleform /> */}
 
             {/* <Newtodo /> */}
 
