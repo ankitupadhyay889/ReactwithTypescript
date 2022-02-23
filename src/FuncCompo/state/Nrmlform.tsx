@@ -1,38 +1,41 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 const Nrmlform = () => {
+  const {register,handleSubmit,formState: { errors }} = useForm();
 
-    const [name, setname] = useState<string>("");
-    const [show, setshow] = useState<string>("")
+  const [data, setdata] = useState({
+      name: "",
+      lastname: "",
+      age: 0
+  });
 
-    const sub = (e:any) => {
-        e.preventDefault();
-        setshow(name);
-        setname("");
+  const haC = (e: ChangeEvent<HTMLInputElement>) => {
+      const name = e.target.name;
+      const value = e.target.value;
 
-        // if(name){
-        //     setshow(name);
-        //     setname("");
-        // }else{
-        //     alert("please fill data first")
-        // }
-    }
+      setdata({...data , [name]: value})
+  }
 
-    const haC = (e:any) => {
-        setname(e.currentTarget.value)
-    }
+  const onSubmit = (data: any) => {
+      console.log(setdata(data));
+  }; 
 
-    return (
-        <div>
-            <form onSubmit={sub}>
-                <h3> {show} </h3>
-                <label htmlFor="name"> Enter name: </label> 
-                <input className='form-control' type="text" name="name" autoComplete="off" value={name} onChange={haC} required />
-                <br/>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    );
-};
+  return (
+      <div>
+        <form onSubmit={handleSubmit(onSubmit)}>
+        <input {...register('firstName')} name="name" value={data.name} onChange={haC} />
+        <br/>
+        <input {...register('lastName', { required: true })} name="lastname" value={data.lastname} onChange={haC} />
+        {errors.lastName && <p>Last name is required.</p>}
+        <br/>
+        <input {...register('age', { pattern: /\d+/ })} name="age" value={data.age} onChange={haC} />
+        {errors.age && <p>Please enter number for age.</p>}
+        <br/>
+        <button type="submit">Submit</button>
+        </form>
+      </div>
+  );
+}
 
 export default Nrmlform;

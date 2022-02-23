@@ -1,9 +1,9 @@
 import React from 'react';
-import All from '../customhook/All';
+// import All from '../customhook/All';
 // import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
-// import Nrmlform from './Nrmlform';
+import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
@@ -19,7 +19,7 @@ import All from '../customhook/All';
 const Calling = () => {
     return (
         <div>
-            <All />
+            {/* <All /> */}
 
             {/* <Advanceprop status='error'> Ankit </Advanceprop> */}
             {/* <Eventprop haC={(event , id) => {console.log(event , id); */}
@@ -43,7 +43,7 @@ const Calling = () => {
 
             {/* <Iuser /> */}
 
-            {/* <Nrmlform /> */}
+            <Nrmlform />
 
             {/* <Conditionsl /> */}
 
