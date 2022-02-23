@@ -8,6 +8,8 @@ type Listpro = {
     }[]
 }
 
+// array of an object or <Array<string>>
+
 const New = (props:Listpro) => {
     return (
         <div>
