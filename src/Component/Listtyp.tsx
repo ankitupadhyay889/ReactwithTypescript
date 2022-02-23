@@ -6,7 +6,7 @@ type Listpro = {
       pincode: number;
     },
     
-    name:Array<any>, // ye jo any hai mtlb string number bollean kuch bhi lelo agar any ki jagah <string> toh arr m string
+    name:Array<any>, // ye jo any hai mtlb string number bollean kuch bhi lelo agar any ki jagah <string | number> toh arr m string
 
     lists:{
     name: string;
