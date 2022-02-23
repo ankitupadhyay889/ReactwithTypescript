@@ -3,11 +3,12 @@ import { useChnage } from './useChnage';
 
 const Third = () => {
 
-    useChnage("Custom Hook" , "log with custom hook1")
+    useChnage("Custom Hook" , "log with custom hook")
+    // if both string match means string ho then it works on console
 
     return (
         <div>
-            <h1> Thired Commit Update error </h1>
+            <h1> Third Commit Updated No Error </h1>
         </div>
     );
 };
