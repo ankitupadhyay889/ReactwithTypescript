@@ -1,5 +1,5 @@
 import React from 'react';
-import Formyup from './Formyup';
+import Formyp from './Formyp';
 // import Nrmlform from './Nrmlform';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
@@ -20,7 +20,7 @@ import Formyup from './Formyup';
 const Calling = () => {
     return (
         <div>
-            <Formyup />
+            <Formyp />
 
             {/* <Nrmlform /> */}
 
