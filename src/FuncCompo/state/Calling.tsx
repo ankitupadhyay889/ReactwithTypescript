@@ -1,9 +1,9 @@
 import React from 'react';
+import Nrmlform from './Nrmlform';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
-import Nrmlform from './Nrmlform';
 // import Iuser from './Iuser';
 // import Form from './state/Form';
 // import Userregis from './state/Userregis';
@@ -19,6 +19,8 @@ import Nrmlform from './Nrmlform';
 const Calling = () => {
     return (
         <div>
+            <Nrmlform />
+
             {/* <All /> */}
 
             {/* <Advanceprop status='error'> Ankit </Advanceprop> */}
@@ -42,8 +44,6 @@ const Calling = () => {
             {/* <Form /> */}
 
             {/* <Iuser /> */}
-
-            <Nrmlform />
 
             {/* <Conditionsl /> */}
 

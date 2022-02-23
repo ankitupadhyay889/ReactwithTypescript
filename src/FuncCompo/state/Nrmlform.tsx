@@ -1,35 +1,25 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 const Nrmlform = () => {
   const {register,handleSubmit,formState: { errors }} = useForm();
 
-  const [data, setdata] = useState({
-      name: "",
-      lastname: "",
-      age: 0
-  });
-
-  const haC = (e: ChangeEvent<HTMLInputElement>) => {
-      const name = e.target.name;
-      const value = e.target.value;
-
-      setdata({...data , [name]: value})
-  }
+  const [data, setdata] = useState<string | number>()
 
   const onSubmit = (data: any) => {
-      console.log(setdata(data));
+      setdata(JSON.stringify(data))
   }; 
 
   return (
       <div>
+        <p> {data} </p>
         <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register('firstName')} name="name" value={data.name} onChange={haC} />
+        <input {...register('firstName')} />
         <br/>
-        <input {...register('lastName', { required: true })} name="lastname" value={data.lastname} onChange={haC} />
+        <input {...register('lastName', { required: true })} />
         {errors.lastName && <p>Last name is required.</p>}
         <br/>
-        <input {...register('age', { pattern: /\d+/ })} name="age" value={data.age} onChange={haC} />
+        <input {...register('age', { pattern: /\d+/ })} />
         {errors.age && <p>Please enter number for age.</p>}
         <br/>
         <button type="submit">Submit</button>
