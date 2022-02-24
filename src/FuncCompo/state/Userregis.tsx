@@ -37,7 +37,7 @@ const Userregis = (props: sty) => {
         <div>
             <h2 style = {props.styl} > Normal Registration Form in React with Typscript and Material Ui </h2>
             <hr></hr>
-            <br/>
+            <br/><br/>
             <form onSubmit={subKa}>
                 <TextField type="text" id="standard-basic" label="Enter First Name" variant="filled" name="fname" autoComplete="off" value={useRegis.fname} onChange={hanInp} />
                 
