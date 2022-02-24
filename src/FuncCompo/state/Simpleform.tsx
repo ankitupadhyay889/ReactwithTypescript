@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+// this is controlled form component
+
 const Simpleform = () => {
 
     const [dt, setdt] = useState("");
