@@ -1,12 +1,12 @@
 import React from 'react';
-import Formyp from './Formyp';
+// import Formyp from './Formyp';
 // import Nrmlform from './Nrmlform';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
 // import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
 // import Iuser from './Iuser';
-// import Form from './Form';
+import Form from './Form';
 // import Userregis from './state/Userregis';
 // import Newtodo from './Newtodo';
 // import Simpleform from './Simpleform';
@@ -20,7 +20,7 @@ import Formyp from './Formyp';
 const Calling = () => {
     return (
         <div>
-            <Formyp />
+            {/* <Formyp /> */}
 
             {/* <Nrmlform /> */}
 
@@ -44,7 +44,7 @@ const Calling = () => {
 
             {/* <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} /> */}
 
-            {/* <Form /> */}
+            <Form />
 
             {/* <Iuser /> */}
 

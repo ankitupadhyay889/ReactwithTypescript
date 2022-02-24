@@ -11,7 +11,7 @@ const dat = yup.object().shape({
 });
 
 const Form = () => {
-    const {handleSubmit, formState: { errors }} = useForm({
+    const {register, handleSubmit, formState: { errors }} = useForm({
         resolver: yupResolver(dat),
       });
       
@@ -19,12 +19,12 @@ const Form = () => {
 
     const [show, setshow] = useState<Array<any>>([]);
 
-    const hanInp = (e: any) => {
-        const name = e.currentTarget.name;
-        const value = e.currentTarget.value;
+    // const hanInp = (e: any) => {
+    //     const name = e.currentTarget.name;
+    //     const value = e.currentTarget.value;
 
-        setdata({...data , [name]:value })
-    }
+    //     setdata({...data , [name]:value })
+    // }
 
     const onSu = (e: any) =>{
         e.preventDefault();
@@ -36,20 +36,20 @@ const Form = () => {
     return (
         <div>
             <form onSubmit={handleSubmit(onSu)}>
-                <TextField type="text" id="standard-basic" label="Enter FullName" variant="filled"
-                name="fullname" value={data.fullname} onChange={hanInp} />
+                <TextField {...register("fullname")} type="text" id="standard-basic" label="Enter FullName" variant="filled"
+                name="fullname"  />
                 <p>{errors.fullname?.message}</p>
                 
                 <br/><br/>
 
-                <TextField type="text" id="standard-basic" label="Enter Username" variant="filled"
-                name="username" value={data.username} onChange={hanInp}  />
+                <TextField {...register("username")} type="text" id="standard-basic" label="Enter Username" variant="filled"
+                name="username"  />
                 <p>{errors.username?.message}</p>
                 
                 <br/><br/>
 
-                <TextField type="text" id="standard-basic" label="Enter Email" variant="filled"
-                name="email" value={data.email} onChange={hanInp}  />
+                <TextField {...register("email")} type="text" id="standard-basic" label="Enter Email" variant="filled"
+                name="email"  />
                 <p>{errors.email?.message}</p>
                 
                 <br/><br/>
