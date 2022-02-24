@@ -1,6 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React,{ useEffect, useRef, useState } from 'react';
 
 const Usrefhoo = () => {
+
+    // use custom hook usePrevious and replace useRef by usePrevious and disable useEffect and in h2 only {preV}
 
     const [cout, setcout] = useState<number>(0)
     const preV = useRef<number>(0)
