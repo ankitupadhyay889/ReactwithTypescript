@@ -1,5 +1,5 @@
 import React from 'react';
-import "./App.css"
+import "./App.css";
 import Calling from './FuncCompo/state/Calling';
 // import Useefct from './FuncCompo/state/Useefct';
 // import CallArrprop./FuncCompo/state/Callingrrprop';

@@ -10,6 +10,6 @@ const Styl = () => {
 
 export default Styl;
 
-// ! agar prop pass krna hai style ka toh React.CSSProperties likhte hai or jaise prop pass hota hai kr do waise
+//agar prop pass krna hai style ka toh React.CSSProperties likhte hai or jaise prop pass hota hai kr do waise
 
 // ! hum type ko alag component m rakh skte hai or uska name .types.ts hoga extension

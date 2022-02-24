@@ -1,15 +1,21 @@
 import React, { useState } from 'react';
 import { TextField , Button } from '@mui/material';
-import * as Yup from 'yup';
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from 'yup';
+
+const dat = yup.object().shape({
+    fullname: yup.string().required(),
+    username: yup.string().required(),
+    email: yup.string().email().required(),
+});
 
 const Form = () => {
-
-    // if i replace any to string it throw error and yup valid not working on both
-    const [data, setdata] = useState<any>(() => Yup.object().shape({
-        fullname: Yup.string().required("Fullname is required"),
-        username: Yup.string().required('Username is required').min(6, 'Username must be at least 6 characters').max(20, 'Username must not exceed 20 characters'),
-        email: Yup.string().required('Email is required').email('Email is invalid'),
-    }));
+    const {handleSubmit, formState: { errors }} = useForm({
+        resolver: yupResolver(dat),
+      });
+      
+    const [data, setdata] = useState<any>("")
 
     const [show, setshow] = useState<Array<any>>([]);
 
@@ -20,7 +26,7 @@ const Form = () => {
         setdata({...data , [name]:value })
     }
 
-    const Sub = (e: any) =>{
+    const onSu = (e: any) =>{
         e.preventDefault();
         const sbhi = {...data};
         setshow([...show , sbhi]);
@@ -29,19 +35,22 @@ const Form = () => {
 
     return (
         <div>
-            <form onSubmit={Sub}>
+            <form onSubmit={handleSubmit(onSu)}>
                 <TextField type="text" id="standard-basic" label="Enter FullName" variant="filled"
-                name="fullname" autoComplete="off" value={data.fullname} onChange={hanInp} />
+                name="fullname" value={data.fullname} onChange={hanInp} />
+                <p>{errors.fullname?.message}</p>
                 
                 <br/><br/>
 
                 <TextField type="text" id="standard-basic" label="Enter Username" variant="filled"
-                name="username" autoComplete="off" value={data.username} onChange={hanInp} />
+                name="username" value={data.username} onChange={hanInp}  />
+                <p>{errors.username?.message}</p>
                 
                 <br/><br/>
 
                 <TextField type="text" id="standard-basic" label="Enter Email" variant="filled"
-                name="email" autoComplete="off" value={data.email} onChange={hanInp} />
+                name="email" value={data.email} onChange={hanInp}  />
+                <p>{errors.email?.message}</p>
                 
                 <br/><br/>
 
