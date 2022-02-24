@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 .App-logo {
@@ -40,7 +40,7 @@
 
 
 /* **************************************************************************************************************************************** */
-/* 
+
 html {
   font-size: 90.5%;
 }
@@ -48,10 +48,10 @@ html {
 body {
   min-height: 100vh;
   width: 100vw;
-  color: aliceblue;
+  /* color: aliceblue; */
   font-family: "Raleway", sans-serif;
 }
-*/
+
 
 /* .Ko {
   text-align: center;
@@ -63,7 +63,7 @@ body {
   margin-bottom: 20px;
 } */
 
-/* 
+
 p {
   font-size: 4rem;
 }
@@ -76,7 +76,7 @@ h1 {
 form {
   background: rgb(116, 138, 194);
   padding: 2rem;
-  border-radius: 10rem;
+  /* border-radius: 10rem; */
   outline: none;
   text-align: center;
 }
@@ -114,4 +114,4 @@ button[type] {
 button[type]:hover {
   background-color: darkblue;
   color: aliceblue;
-} */
+}
