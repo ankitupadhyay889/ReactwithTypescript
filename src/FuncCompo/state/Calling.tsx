@@ -1,5 +1,6 @@
 import React from 'react';
-import UserefffForm from './UserefffForm';
+import UseRedu from './UseRedu';
+// import UserefffForm from './UserefffForm';
 // import Usrefhoo from './Usrefhoo';
 // import Formyp from './Formyp';
 // import Nrmlform from './Nrmlform';
@@ -22,7 +23,9 @@ import UserefffForm from './UserefffForm';
 const Calling = () => {
     return (
         <div>
-            <UserefffForm />
+            <UseRedu />
+
+            {/* <UserefffForm /> */}
 
             {/* <Usrefhoo /> */}
 

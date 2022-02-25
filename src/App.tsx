@@ -1,4 +1,3 @@
-import React from 'react';
 import "./App.css";
 import Calling from './FuncCompo/state/Calling';
 // import Useefct from './FuncCompo/state/Useefct';
@@ -49,13 +48,14 @@ const App = () => {
 
   return (
     <div className='App'>
+
+      <Calling />
+
       {/* <New lists={list} /> */}
       {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
       {/* <Proplist names={full} /> */}
       {/* <Callstat /> */}
       {/* <Useefct /> */}
-
-      <Calling />
     </div>
   );
 };
