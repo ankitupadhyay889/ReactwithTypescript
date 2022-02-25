@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
-import { createContext } from 'vm';
+import React from 'react';
+import Contexxho from './Contexxho';
 
-const theme = createContext({background: "black" , color: "white"})
-const themes = {
-    red: {background: "white" , color: "red"},
-    light: {background: "white" , color: "gray"},
-    dark: {background: "black" , color: "white"},
-}
+const Firstname = React.createContext<any>("");
 
 const A = () => {
 
-    const [them, setthem] = useState(themes)
-
     return (
         <div>
-            <theme.provider value={them}>
-                
-            </theme.provider>
+            <Firstname.Provider value={"Ankit"}>
+                <Contexxho />
+            </Firstname.Provider>
         </div>
     );
 };
 
 export default A;
-export {theme};
+export {Firstname};
