@@ -1,6 +1,22 @@
 import React, { useContext } from 'react';
 import lca from "../state/logo192.png"
 import {Firstname} from "./A";
+export interface IUserDetailContext {
+    name: string;
+    rollNo: number | null
+}
+
+const initialValue = {
+    name: '',
+    rollNo: null
+}
+
+const user = {
+    name: 'Anuj',
+    rollNo: 7
+}
+
+export const userContext = createContext<IUserDetailContext>(initialValue)
 
 const theme = React.createContext({background: "black" , color: "white"})
 // const themes = {

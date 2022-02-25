@@ -1,7 +1,7 @@
 import React from 'react';
 import Contexxho from './Contexxho';
 
-const Firstname = React.createContext<any>("");
+const Firstname = React.createContext<string>("");
 
 const A = () => {
 
