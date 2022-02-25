@@ -6,8 +6,7 @@ const UserefffForm = () => {
 
     const [show, setshow] = useState(false);
 
-    const Op = (e: any) => {
-        e.preventDefault();
+    const Op = () => {
         const sjo = luname.current?.value;
         sjo === "" ? alert("please fill the data") : setshow(true);
     }
