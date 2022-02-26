@@ -16,7 +16,7 @@ const user = {
     rollNo: 7
 }
 
-export const userContext = createContext<IUserDetailContext>(initialValue)
+export const userContext = React.createContext<IUserDetailContext>(initialValue)
 
 const theme = React.createContext({background: "black" , color: "white"})
 // const themes = {
