@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { TextField , Button } from '@mui/material';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -63,7 +63,7 @@ const Form = () => {
                         const {fullname , username , email} = curElem
                         return(
                             <div key={id}>
-                                <h2> {fullname} -- {username} -- {email} </h2>
+                                <h2> {fullname} {username} {email} </h2>
                             </div>
                         )
                     })
