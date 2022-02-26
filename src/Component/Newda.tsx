@@ -17,12 +17,13 @@ class Newda extends Component<{} , Cosa> {
     }
 
     componentDidMount() {
-        setInterval(() => this.co() , 2000)
+        setInterval(() => this.co() , 1000)
     }
 
     render() {
         return (
             <div>
+                <h2> Current Time </h2>
                 <h1>The current time is {this.state.time.toLocaleTimeString()} </h1>
             </div>
         );
