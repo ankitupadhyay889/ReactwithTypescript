@@ -10,7 +10,7 @@ type Listpro = {
 
     lists:{
     name: string;
-    phonenumber: number;
+    pnumber: number;
     }[]
 }
 
@@ -19,7 +19,7 @@ export default class Listtyp extends Component<Listpro> {
     return (
       <div>
           <li> {this.props.lists[0].name} </li>
-          <li> {this.props.lists[0].phonenumber} </li>
+          <li> {this.props.lists[0].pnumber} </li>
           <br/>
           <br/>
           <ul> {this.props.address.city} </ul>

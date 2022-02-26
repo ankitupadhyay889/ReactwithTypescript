@@ -13,6 +13,7 @@ const Inpt = (props: Inp) => {
 
     return (
         <div>
+            <h2> Input handle change </h2>
             <input type="text" value={props.value} onChange={hanC} />
         </div>
     );

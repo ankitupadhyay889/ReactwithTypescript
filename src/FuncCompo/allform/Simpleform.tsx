@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const Simpleform = () => {
 
-    const [dt, setdt] = useState("");
+    const [dt, setdt] = useState<any>("");
     const [show, setshow] = useState<Array<any>>([])
 
     const sub = (e:any) => {

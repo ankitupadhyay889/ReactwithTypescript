@@ -111,7 +111,7 @@ button[type] {
   outline: none;
 }
 
-button[type]:hover {
+/* button[type]:hover {
   background-color: darkblue;
   color: aliceblue;
-}
+} */

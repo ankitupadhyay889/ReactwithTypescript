@@ -63,7 +63,7 @@ const Form = () => {
                         const {fullname , username , email} = curElem
                         return(
                             <div key={id}>
-                                <h2> {fullname} {username} {email} </h2>
+                                <h2> {fullname} -- {username} -- {email} </h2>
                             </div>
                         )
                     })

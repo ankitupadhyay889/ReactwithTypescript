@@ -16,4 +16,3 @@ export default class Child extends Component<Adpro> {
   }
 }
 //ye jo hum call krte hai <Child> Ankit </Child> jo likhe iske andar iskko child khte hai or call k liye children prop use.
-// hum isko child kahte hai or call aise krte hai
