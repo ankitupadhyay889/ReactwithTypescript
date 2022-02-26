@@ -5,13 +5,10 @@ type Msa = {
     email: string;
 }
 
-type Mpro = {
 
-}
+class Event extends Component<{} , Msa> {
 
-class Event extends Component<Mpro , Msa> {
-
-    constructor(props:Mpro) {
+    constructor(props:{}) {
       super(props)
     
       this.state = {
