@@ -1,18 +1,35 @@
-import React from 'react';
-import Contexxho from './Contexxho';
+import { createContext, useState } from "react";
+import Contexxho from "./Contexxho";
 
-const Firstname = React.createContext<string>("");
+export interface IUserDetailContext {
+    name: string;
+    rollNo: number | null
+}
 
-const A = () => {
+const initialValue = {
+    name: '',
+    rollNo: null
+}
 
+const user = {
+    name: 'Ankit',
+    rollNo: 7
+}
+
+export const userContext = createContext<IUserDetailContext>(initialValue)
+
+export function UseContextHook() {
+    const [userDetails, setUserDetails] = useState(user);
+    const updateName = (name: string) => {
+        setUserDetails({
+            ...userDetails,
+            name: name
+        });
+    }
     return (
-        <div>
-            <Firstname.Provider value={"Ankit"}>
-                <Contexxho />
-            </Firstname.Provider>
-        </div>
-    );
-};
-
-export default A;
-export {Firstname};
+        <userContext.Provider value={userDetails}>
+            <button onClick={() => updateName('Ankit1')}>Update Name</button>
+            <Contexxho />
+        </userContext.Provider>
+    )
+}

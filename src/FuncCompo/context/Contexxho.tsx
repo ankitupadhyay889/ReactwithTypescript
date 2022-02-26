@@ -1,37 +1,17 @@
 import React, { useContext } from 'react';
 import lca from "../state/logo192.png"
-import {Firstname} from "./A";
-export interface IUserDetailContext {
-    name: string;
-    rollNo: number | null
-}
+import { userContext } from './A';
 
-const initialValue = {
-    name: '',
-    rollNo: null
-}
+const theme = React.createContext({background: "white" , color: "red"})
 
-const user = {
-    name: 'Anuj',
-    rollNo: 7
-}
-
-export const userContext = React.createContext<IUserDetailContext>(initialValue)
-
-const theme = React.createContext({background: "black" , color: "white"})
-// const themes = {
-//     red: {background: "white" , color: "red"},
-//     light: {background: "white" , color: "gray"},
-//     dark: {background: "black" , color: "white"},
-// }
 const Contexxho = () => {
 
     const threre = useContext(theme);
-    const fname = useContext(Firstname);
+    const ContextValue = useContext(userContext)
 
     return (
         <>
-        <div> Name is : {fname} </div>
+        <div> Name is {ContextValue.name} -- {ContextValue.rollNo} </div>
         <div style={{background: threre.background , color: threre.color}}>
             <h2> useContext Hook </h2>
             <input type="text" />
