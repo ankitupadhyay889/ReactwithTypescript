@@ -5,7 +5,7 @@ type Qsa = {
 }
 
 type Qpro = {
-    quo : Array<string>
+    quo : string[]
 }
 
 export default class Render extends Component<Qpro , Qsa> {
