@@ -29,7 +29,7 @@ const Contexxho = () => {
             <img style={{background: threre.background , color: threre.color}} src={lca} alt="po" />
         </div>
         <div>
-            <h1> Name is {cont} </h1>
+            <h1> Name {cont} </h1>
         </div>
         </>        
     );

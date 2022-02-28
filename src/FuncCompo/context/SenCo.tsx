@@ -13,3 +13,6 @@ const SenCo = () => {
 
 export default SenCo;
 export {Fname};
+
+// hum contexxho ko bhi call kr skte hai but jisme provider bnate hai uiki browser p call krte hai
+// maine contexx m consume kiya hai or CallCont m isko call kiya toh aap p denpend krta hai.
