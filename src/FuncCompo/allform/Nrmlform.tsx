@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 // best eg are formyp with yup valid and yup valid with controlled but not work throw error on submit the form
 
 const Nrmlform = () => {
-  const {register,handleSubmit,formState: { errors }} = useForm();
+  const {register , handleSubmit , formState: { errors }} = useForm();
 
   const [data, setdata] = useState<string | number>()
 
