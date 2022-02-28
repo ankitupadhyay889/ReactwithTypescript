@@ -1,5 +1,7 @@
 import React from 'react';
-import Contexxho from '../context/Contexxho';
+import SenCo from '../context/SenCo';
+// import { CallCont } from '../context/CallCont';
+// import Contexxho from '../context/Contexxho';
 // import Refhoo from './Refhoo';
 // import UseRedu from './UseRedu';
 // import UserefffForm from './UserefffForm';
@@ -25,7 +27,11 @@ import Contexxho from '../context/Contexxho';
 const Calling = () => {
     return (
         <div>
-            <Contexxho />
+            <SenCo />
+
+            {/* <CallCont /> */}
+
+            {/* <Contexxho /> */}
 
             {/* <Refhoo /> */}
 
