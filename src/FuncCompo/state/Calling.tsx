@@ -1,12 +1,12 @@
 import React from 'react';
-import SenCo from '../context/SenCo';
+// import SenCo from '../context/SenCo';
 // import { CallCont } from '../context/CallCont';
 // import Contexxho from '../context/Contexxho';
 // import Refhoo from './Refhoo';
 // import UseRedu from './UseRedu';
 // import UserefffForm from './UserefffForm';
 // import Usrefhoo from './Usrefhoo';
-// import Formyp from './Formyp';
+import Formyp from "../allform/Formyp";
 // import Nrmlform from './Nrmlform';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
@@ -27,7 +27,7 @@ import SenCo from '../context/SenCo';
 const Calling = () => {
     return (
         <div>
-            <SenCo />
+            {/* <SenCo /> */}
 
             {/* <CallCont /> */}
 
@@ -41,7 +41,7 @@ const Calling = () => {
 
             {/* <Usrefhoo /> */}
 
-            {/* <Formyp /> */}
+            <Formyp />
 
             {/* <Nrmlform /> */}
 

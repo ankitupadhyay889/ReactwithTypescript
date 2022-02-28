@@ -4,8 +4,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const dat = yup.object().shape({
-    name: yup.string().required("Name is required"),
-    address: yup.string().required("Address is required"),
+    name: yup.string().required("Name is required first"),
+    address: yup.string().required("Address is required first"),
     email: yup.string().email().required(),
     password: yup.string().min(8).max(32).required(),
 });
