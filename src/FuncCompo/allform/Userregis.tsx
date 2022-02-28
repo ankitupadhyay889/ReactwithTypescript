@@ -5,9 +5,19 @@ type sty = {
     styl: React.CSSProperties
 }
 
+type In = {
+    fname: string,
+    lname: string,
+    pnumber: string,
+    email: string,
+    address: string,
+    qualification: string,
+    age: number,
+}
+
 const Userregis = (props: sty) => {
 
-    const [useRegis, setuseRegis] = useState({
+    const [useRegis, setuseRegis] = useState<In>({
         fname: "",
         lname: "",
         pnumber: "",

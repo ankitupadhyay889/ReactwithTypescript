@@ -6,7 +6,7 @@ import React from 'react';
 // import UseRedu from './UseRedu';
 // import UserefffForm from './UserefffForm';
 // import Usrefhoo from './Usrefhoo';
-import Formyp from "../allform/Formyp";
+// import Formyp from "../allform/Formyp";
 // import Nrmlform from './Nrmlform';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
@@ -14,7 +14,7 @@ import Formyp from "../allform/Formyp";
 // import Conditionsl from './Conditionsl';
 // import Iuser from './Iuser';
 // import Form from './Form';
-// import Userregis from './state/Userregis';
+import Userregis from '../allform/Userregis';
 // import Newtodo from './Newtodo';
 // import Simpleform from './Simpleform';
 // import Eventprop from './Eventprop';
@@ -41,7 +41,7 @@ const Calling = () => {
 
             {/* <Usrefhoo /> */}
 
-            <Formyp />
+            {/* <Formyp /> */}
 
             {/* <Nrmlform /> */}
 
@@ -63,7 +63,7 @@ const Calling = () => {
 
             {/* <Newtodo /> */}
 
-            {/* <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} /> */}
+            <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} />
 
             {/* <Form /> */}
 
