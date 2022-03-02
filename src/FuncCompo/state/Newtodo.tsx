@@ -6,15 +6,31 @@ import { TextField , IconButton } from '@mui/material';
 
 const Newtodo = () => {
 
-    const [input, setinput] = useState<string>("")
+    const [input, setinput] = useState<String>("")
 
     const [show, setshow] = useState<Array<any>>([])
     
     // const [show, setshow] = useState<string[]>([])
 
+    const [toog, settoog] = useState<boolean>(true)
+
+    const [edit, setedit] = useState<string>("")
+
     const add = () => {
         if(!input){
             alert("Please fill the input first")
+        }else if(input && !toog){
+            setshow(
+                show.map((ele) => {
+                    if(ele.id === edit){
+                        return{ ...ele , input: input }
+                    }
+                    return ele;
+                })
+            )
+            setinput("")
+            setedit("");
+            settoog(true);
         }else{
             const sbhidata = { id: new Date().getTime().toString() , input: input }
             setshow([...show , sbhidata]);
@@ -31,11 +47,14 @@ const Newtodo = () => {
     }
 
     //! Edit The List Item
-    const edi = (ine: number) => {
+    const edi = (ine: any) => {
         let newEd = show.find((ele) => {
             return ele.id === ine
         })
         console.log(newEd);
+        setinput(newEd.input)
+        setedit(ine);
+        settoog(false);
     }
 
     return (
@@ -44,8 +63,10 @@ const Newtodo = () => {
 
             <TextField id="standard-basic" label="Enter Name"
             variant="outlined" value={input} 
-            onChange={(e) => setinput(e.target.value)}/>
-            <IconButton onClick={add}> <AddIcon /> </IconButton>
+            onChange={(e) => setinput(e.target.value)} />
+            {
+                toog ? <IconButton onClick={add}> <AddIcon /> </IconButton> : <IconButton onClick={add}> <EditIcon /> </IconButton>
+            }
 
             <br/><br/>
 
