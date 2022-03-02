@@ -11,7 +11,7 @@ const Newtodo = () => {
 
     const add = () => {
         if(!input){
-
+            alert("Please fill the input first")
         }else{
             setshow([...show , input]);
             setinput("")
