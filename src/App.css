@@ -105,7 +105,7 @@ form input {
   outline: none;
 } */
 
-button[type] {
+/* button[type] {
   border: none;
   padding: 0.4rem 1rem;
   text-align: center;
@@ -119,4 +119,4 @@ button[type] {
 button[type]:hover {
   background-color: darkblue;
   color: aliceblue;
-}
+} */

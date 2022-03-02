@@ -14,8 +14,8 @@ import React from 'react';
 // import Conditionsl from './Conditionsl';
 // import Iuser from './Iuser';
 // import Form from './Form';
-import Userregis from '../allform/Userregis';
-// import Newtodo from './Newtodo';
+// import Userregis from '../allform/Userregis';
+import Newtodo from './Newtodo';
 // import Simpleform from './Simpleform';
 // import Eventprop from './Eventprop';
 // import Inpt from './Inpt';
@@ -27,6 +27,8 @@ import Userregis from '../allform/Userregis';
 const Calling = () => {
     return (
         <div>
+            <Newtodo />
+
             {/* <SenCo /> */}
 
             {/* <CallCont /> */}
@@ -61,9 +63,7 @@ const Calling = () => {
 
             {/* <Simpleform /> */}
 
-            {/* <Newtodo /> */}
-
-            <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} />
+            {/* <Userregis styl = {{color: "green" , fontStyle: "italic" , fontSize: "50px" , fontWeight: "lighter"}} /> */}
 
             {/* <Form /> */}
 

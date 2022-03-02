@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { TextField , IconButton } from '@mui/material';
-import "../App.css"
 
 const Newtodo = () => {
 
@@ -29,7 +28,9 @@ const Newtodo = () => {
     return (
         <div>
             <h1> *****-------------Todo List App-------------***** </h1>
-            <TextField id="standard-basic" label="Enter Name" variant="standard" value={input} onChange={(e) => setinput(e.target.value)} />
+            <TextField id="standard-basic" label="Enter Name"
+            variant="outlined" value={input} 
+            onChange={(e) => setinput(e.target.value)}/>
             <IconButton onClick={add}> <AddIcon /> </IconButton>
 
             <br/><br/>
