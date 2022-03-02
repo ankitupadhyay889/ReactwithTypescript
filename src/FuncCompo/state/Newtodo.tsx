@@ -1,33 +1,47 @@
 import React, { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import EditIcon from '@mui/icons-material/Edit';
 import { TextField , IconButton } from '@mui/material';
 
 const Newtodo = () => {
 
     const [input, setinput] = useState<string>("")
-    // const [show, setshow] = useState<Array<any>>([])
-    const [show, setshow] = useState<string[]>([])
+
+    const [show, setshow] = useState<Array<any>>([])
+    
+    // const [show, setshow] = useState<string[]>([])
 
     const add = () => {
         if(!input){
             alert("Please fill the input first")
         }else{
-            setshow([...show , input]);
+            const sbhidata = { id: new Date().getTime().toString() , input: input }
+            setshow([...show , sbhidata]);
             setinput("")
         }
     }    
 
-    const del = (id:number) => {
-        const updat = show.filter((ele , ind) => {
-            return ind !== id;
+    //! Delete The List Item 
+    const del = (index: number) => {
+        const updat = show.filter((ele) => {
+            return index !== ele.id;
         })
         setshow(updat);
     }
 
+    //! Edit The List Item
+    const edi = (ine: number) => {
+        let newEd = show.find((ele) => {
+            return ele.id === ine
+        })
+        console.log(newEd);
+    }
+
     return (
-        <div>
-            <h1> *****-------------Todo List App-------------***** </h1>
+        <div className='App'>
+            <h1 className='lp'> *****-------------Todo List App-------------***** </h1>
+
             <TextField id="standard-basic" label="Enter Name"
             variant="outlined" value={input} 
             onChange={(e) => setinput(e.target.value)}/>
@@ -37,10 +51,13 @@ const Newtodo = () => {
 
             <div>
                 {
-                    show.map((ele:string , ind:number) => {
+                    show.map((ele: any) => {
                         return(
-                            <div key={ind} className="Ko">
-                                <li> {ele} <IconButton onClick={() => del(ind)}> <DeleteOutlineIcon /> </IconButton> </li>
+                            <div key={ele.id} className="Ko">
+                                <div>
+                                    <ol> {ele.input} <IconButton onClick={() => edi(ele.id)}> <EditIcon /> </IconButton>
+                                    <IconButton onClick={() => del(ele.id)}> <DeleteOutlineIcon /> </IconButton> </ol>
+                                </div>
                             </div>
                         )
                     })

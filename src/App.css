@@ -58,15 +58,19 @@ body {
 /* } */
 
 
-/* .Ko {
+.Ko {
   text-align: center;
   margin-top: 25px;
   background-color: rgb(153, 177, 197);
   margin-left: 800px;
   margin-right: 850px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 20px;
-} */
+}
+
+.lp{
+  margin-top: 50px;
+}
 
 /* 
 p {
