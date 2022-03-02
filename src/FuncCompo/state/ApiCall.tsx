@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const ApiCall = () => {
 
-    const [covid, setcovid] = useState<Array<any>>([])
-
-    // compulsory to call array
-    
+    const [covid, setcovid] = useState<Array<any>>([])    
 
     const getCovid = async() => {
         const res = await fetch("https://fakestoreapi.com/products");
