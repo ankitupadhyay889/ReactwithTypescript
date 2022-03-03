@@ -6,7 +6,7 @@ import { TextField , IconButton } from '@mui/material';
 
 const Newtodo = () => {
 
-    const [input, setinput] = useState<String>("")
+    const [input, setinput] = useState<string | number>("")
 
     const [show, setshow] = useState<Array<any>>([])
     
@@ -14,7 +14,7 @@ const Newtodo = () => {
 
     const [toog, settoog] = useState<boolean>(true)
 
-    const [edit, setedit] = useState<string>("")
+    const [edit, setedit] = useState<string | number>("")
 
     const add = () => {
         if(!input){
@@ -47,7 +47,7 @@ const Newtodo = () => {
     }
 
     //! Edit The List Item
-    const edi = (ine: any) => {
+    const edi = (ine: number) => {
         let newEd = show.find((ele) => {
             return ele.id === ine
         })

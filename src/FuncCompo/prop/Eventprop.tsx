@@ -16,5 +16,4 @@ export default Eventprop;
 
 // const hanC = (event: React.ChangeEvent<HTMLInputElement>) => {
 //     console.log(event);
-    
 // }
