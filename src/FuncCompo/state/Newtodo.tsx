@@ -74,7 +74,7 @@ const Newtodo = () => {
                 {
                     show.map((ele: any) => {
                         return(
-                            <div key={ele.id} className="Ko">
+                            <div key={ele.id} className="ko">
                                 <div>
                                     <ol> {ele.input} <IconButton onClick={() => edi(ele.id)}> <EditIcon /> </IconButton>
                                     <IconButton onClick={() => del(ele.id)}> <DeleteOutlineIcon /> </IconButton> </ol>
