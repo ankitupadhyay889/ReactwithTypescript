@@ -14,7 +14,7 @@ const Newtodo = () => {
 
     const add = () => {
         if(!input){
-            alert("Please fill the input first")
+            alert("Please fill the input first");
         }else if(input && !toog){
             setshow(
                 show.map((ele) => {

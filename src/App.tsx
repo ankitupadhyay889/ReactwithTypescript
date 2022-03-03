@@ -1,6 +1,6 @@
-// import "./App.css";
-import To from "./Component/To";
-// import Calling from './FuncCompo/state/Calling';
+import "./App.css";
+// import To from "./Component/To";
+import Calling from './FuncCompo/state/Calling';
 // import Useefct from './FuncCompo/state/Useefct';
 // import CallArrprop./FuncCompo/state/Callingrrprop';
 // import New from './FuncCompo/New';
@@ -48,12 +48,11 @@ const App = () => {
     //   ]
 
   return (
-    <div>
+    <div className="App">
 
-      {/* <Calling /> */}
+      <Calling />
 
-      <To />
-
+      {/* <To /> */}
       {/* <New lists={list} /> */}
       {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
       {/* <Proplist names={full} /> */}
