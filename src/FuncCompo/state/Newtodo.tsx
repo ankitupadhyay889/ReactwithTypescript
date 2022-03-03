@@ -7,13 +7,9 @@ import { TextField , IconButton } from '@mui/material';
 const Newtodo = () => {
 
     const [input, setinput] = useState<string | number>("")
-
     const [show, setshow] = useState<Array<any>>([])
-    
     // const [show, setshow] = useState<string[]>([])
-
     const [toog, settoog] = useState<boolean>(true)
-
     const [edit, setedit] = useState<string | number>("")
 
     const add = () => {
@@ -60,10 +56,7 @@ const Newtodo = () => {
     return (
         <div className='App'>
             <h1 className='lp'> *****-------------Todo List App-------------***** </h1>
-
-            <TextField id="standard-basic" label="Enter Name"
-            variant="outlined" value={input} 
-            onChange={(e) => setinput(e.target.value)} />
+            <TextField id="standard-basic" label="Enter Name" variant="outlined" value={input} onChange={(e) => setinput(e.target.value)} />
             {
                 toog ? <IconButton onClick={add}> <AddIcon /> </IconButton> : <IconButton onClick={add}> <EditIcon /> </IconButton>
             }
@@ -72,12 +65,12 @@ const Newtodo = () => {
 
             <div>
                 {
-                    show.map((ele: any) => {
+                    show.map((Curele: any) => {
                         return(
-                            <div key={ele.id} className="ko">
+                            <div key={Curele.id} className="ko">
                                 <div>
-                                    <ol> {ele.input} <IconButton onClick={() => edi(ele.id)}> <EditIcon /> </IconButton>
-                                    <IconButton onClick={() => del(ele.id)}> <DeleteOutlineIcon /> </IconButton> </ol>
+                                    <ol> {Curele.input} <IconButton onClick={() => edi(Curele.id)}> <EditIcon /> </IconButton>
+                                    <IconButton onClick={() => del(Curele.id)}> <DeleteOutlineIcon /> </IconButton> </ol>
                                 </div>
                             </div>
                         )

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Conditionsl = () => {
 
-    const [log, setlog] = useState(true)
+    const [log, setlog] = useState(false)
 
     const li = () => {
         setlog(true)

@@ -12,7 +12,7 @@ const Userlog = () => {
     const li = () => {
         setuser({
             name: "ankit",
-            email: "ank@exam.com"
+            email: "kkahuja@exam.com"
         })
     }
 

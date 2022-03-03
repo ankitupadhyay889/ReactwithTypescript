@@ -21,3 +21,5 @@ const Proplist = (props: Lis) => {
 };
 
 export default Proplist;
+
+// props: Lis[] aise bhi likh skte hai
