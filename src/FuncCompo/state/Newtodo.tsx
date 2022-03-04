@@ -17,11 +17,11 @@ const Newtodo = () => {
             alert("Please fill the input first");
         }else if(input && !toog){
             setshow(
-                show.map((ele) => {
-                    if(ele.id === edit){
-                        return{ ...ele , input: input }
+                show.map((elew) => {
+                    if(elew.id === edit){
+                        return{ ...elew , input: input }
                     }
-                    return ele;
+                    return elew;
                 })
             )
             setinput("")

@@ -1,11 +1,11 @@
 import React from 'react';
-import Useefct from './Useefct';
+import UseRedu from './UseRedu';
+// import Useefct from './Useefct';
 // import Newtodo from './Newtodo';
 // import SenCo from '../context/SenCo';
 // import { CallCont } from '../context/CallCont';
 // import Contexxho from '../context/Contexxho';
 // import Refhoo from './Refhoo';
-// import UseRedu from './UseRedu';
 // import UserefffForm from './UserefffForm';
 // import Usrefhoo from './Usrefhoo';
 // import Formyp from "../allform/Formyp";
@@ -28,9 +28,11 @@ import Useefct from './Useefct';
 const Calling = () => {
     return (
         <div>
-            <Useefct />
+            <UseRedu />
 
             {/* <Newtodo /> */}
+
+            {/* <Useefct /> */}
 
             {/* <SenCo /> */}
 
@@ -39,8 +41,6 @@ const Calling = () => {
             {/* <Contexxho /> */}
 
             {/* <Refhoo /> */}
-
-            {/* <UseRedu /> */}
 
             {/* <UserefffForm /> */}
 

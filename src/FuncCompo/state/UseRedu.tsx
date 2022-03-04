@@ -13,7 +13,7 @@ function reduc(state: Isis , action: any){
     switch(action.type){
         case "incr":
             return {cout: state.cout + 1}
-        case "decr":
+        case "decre":
             return {cout: state.cout - 1}
         default:
             return {cout: state.cout}
@@ -30,7 +30,7 @@ const UseRedu = () => {
 
     const Dno = () => {
         if(coutstate.cout > 0){
-            dispatch({type : "decr"})
+            dispatch({type : "decre"})
         }
     }
 
