@@ -65,7 +65,7 @@ const Newtodo = () => {
 
             <div>
                 {
-                    show.map((Curele: any) => {
+                    show.map((Curele) => {
                         return(
                             <div key={Curele.id} className="ko">
                                 <div>
