@@ -1,5 +1,6 @@
 import React from 'react';
-import Newtodo from './Newtodo';
+import Useefct from './Useefct';
+// import Newtodo from './Newtodo';
 // import SenCo from '../context/SenCo';
 // import { CallCont } from '../context/CallCont';
 // import Contexxho from '../context/Contexxho';
@@ -27,7 +28,9 @@ import Newtodo from './Newtodo';
 const Calling = () => {
     return (
         <div>
-            <Newtodo />
+            <Useefct />
+
+            {/* <Newtodo /> */}
 
             {/* <SenCo /> */}
 
