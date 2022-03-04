@@ -5,6 +5,7 @@ type Msa = {
     email: string;
 }
 
+// define kr lo state y {} aise rakh lo
 
 class Event extends Component<{} , Msa> {
 
