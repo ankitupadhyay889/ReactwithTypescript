@@ -4,11 +4,13 @@ const UserefffForm = () => {
 
     const luname = useRef<HTMLInputElement>(null)
 
-    const [show, setshow] = useState(false);
+    const [show, setshow] = useState<boolean>(false);
 
-    const Op = () => {
-        const sjo = luname.current?.value;
-        sjo === "" ? alert("please fill the data") : setshow(true);
+    const Op = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log(luname.current?.value);
+        const data = luname.current?.value;
+        data === "" ? alert("Please fill data first") : setshow(true);
     }
 
     return (
@@ -21,7 +23,7 @@ const UserefffForm = () => {
                 <br/>
                 <button type='submit'> Submit </button>
             </form>
-            <p> {show ? `Your name is ${luname.current?.value}` : ""} </p>
+            <p> {show ? `Your Name is ${luname.current?.value}` : ""} </p>
         </div>
     );
 };
