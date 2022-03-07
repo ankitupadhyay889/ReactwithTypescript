@@ -10,7 +10,7 @@ const Refhoo = () => {
 
     return (
         <div>
-            <img src={cla} alt="po" onClick={Po} ref={log} />
+            <img src={cla} alt="po" onClick={Po} ref = {log} />
         </div>
     );
 };
