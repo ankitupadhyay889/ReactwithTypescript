@@ -1,4 +1,5 @@
 import React from 'react';
+import ApiCall from './ApiCall';
 // import UseRedu from './UseRedu';
 // import Useefct from './Useefct';
 // import Newtodo from './Newtodo';
@@ -6,13 +7,12 @@ import React from 'react';
 // import { CallCont } from '../context/CallCont';
 // import Contexxho from '../context/Contexxho';
 // import Refhoo from './Refhoo';
-import UserefffForm from "./UserefffForm";
+// import UserefffForm from "./UserefffForm";
 // import Usrefhoo from './Usrefhoo';
 // import Formyp from "../allform/Formyp";
 // import Nrmlform from './Nrmlform';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
-// import ApiCall from './ApiCall';
 // import Conditionsl from './Conditionsl';
 // import Iuser from './Iuser';
 // import Form from './Form';
@@ -28,6 +28,8 @@ import UserefffForm from "./UserefffForm";
 const Calling = () => {
     return (
         <div>
+            <ApiCall />
+
             {/* <UseRedu /> */}
 
             {/* <Newtodo /> */}
@@ -42,7 +44,7 @@ const Calling = () => {
 
             {/* <Refhoo /> */}
 
-            <UserefffForm />
+            {/* <UserefffForm /> */}
 
             {/* <Usrefhoo /> */}
 
@@ -73,8 +75,6 @@ const Calling = () => {
             {/* <Iuser /> */}
 
             {/* <Conditionsl /> */}
-
-            {/* <ApiCall /> */}
 
             {/* <Multiitem /> */}
         </div>

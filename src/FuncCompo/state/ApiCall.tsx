@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 
+type Sma = {
+    title: string;
+    image: string;   
+}
+
 const ApiCall = () => {
 
-    const [covid, setcovid] = useState<Array<any>>([])    
+    const [covid, setcovid] = useState<Sma[]>([])    
 
     const getCovid = async() => {
         const res = await fetch("https://fakestoreapi.com/products");
-        const dat = await res.json();
-        console.log(dat);
-        setcovid(dat);
+        const data = await res.json();
+        console.log(data);
+        setcovid(data);
     }
 
     useEffect(() => {
@@ -19,7 +24,7 @@ const ApiCall = () => {
     return (
         <div>
             {
-                covid.map((item , id) => {
+                covid.map((item , id: number) => {
                     return(
                         <div key={id}>
                             <li> {item.title} </li>
