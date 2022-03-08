@@ -1,6 +1,7 @@
 import React from 'react';
+import Memhoo from './Memhoo';
 // import Useefct from './Useefct';
-import ApiCall from "./ApiCall";
+// import ApiCall from "./ApiCall";
 // import UseRedu from './UseRedu';
 // import Useefct from './Useefct';
 // import Newtodo from './Newtodo';
@@ -29,7 +30,9 @@ import ApiCall from "./ApiCall";
 const Calling = () => {
     return (
         <div>
-            <ApiCall />
+            <Memhoo />
+
+            {/* <ApiCall /> */}
 
             {/* <Useefct /> */}
 
