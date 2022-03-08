@@ -105,17 +105,17 @@ form input {
   padding: 0.5rem;
   outline: none;
 } */
-
-/* button[type] {
+/* 
+button[type] {
   border: none;
   padding: 0.4rem 1rem;
   text-align: center;
   margin-top: 1rem;
   font-family: "Raleway", sans-serif;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  outline: none;
-} */
+  border-radius: 0.3rem; */
+  /* cursor: pointer; */
+  /* outline: none; */
+/* } */
 
 /* button[type]:hover {
   background-color: darkblue;
