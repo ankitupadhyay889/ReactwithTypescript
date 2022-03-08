@@ -1,6 +1,6 @@
 import React from 'react';
-import Useefct from './Useefct';
-// import ApiCall from './ApiCall';
+// import Useefct from './Useefct';
+import ApiCall from "./ApiCall";
 // import UseRedu from './UseRedu';
 // import Useefct from './Useefct';
 // import Newtodo from './Newtodo';
@@ -29,9 +29,9 @@ import Useefct from './Useefct';
 const Calling = () => {
     return (
         <div>
-            <Useefct />
+            <ApiCall />
 
-            {/* <ApiCall /> */}
+            {/* <Useefct /> */}
 
             {/* <UseRedu /> */}
 

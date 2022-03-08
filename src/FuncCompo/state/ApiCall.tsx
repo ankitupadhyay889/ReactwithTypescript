@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import axios,{AxiosResponse} from "axios";
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Divider from '@mui/material/Divider';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Avatar from '@mui/material/Avatar';
 
 type Sma = {
     title: string;
-    image: string;   
+    image?: string;
+    description: string;   
 }
 
 const ApiCall = () => {
 
     const [covid, setcovid] = useState<Sma[]>([])    
 
-    const getCovid = async() => {
-        const res = await fetch("https://fakestoreapi.com/products");
-        const data = await res.json();
-        console.log(data);
-        setcovid(data);
+    const getCovid = () => {
+        axios.get("https://fakestoreapi.com/products").then((res: AxiosResponse) => {
+            console.log(res.data);
+            setcovid(res.data);
+        })
     }
 
     useEffect(() => {
@@ -22,18 +30,20 @@ const ApiCall = () => {
     
 
     return (
-        <div>
-            {
-                covid.map((item , id: number) => {
-                    return(
-                        <div key={id}>
-                            <li> {item.title} </li>
-                            <img style={{height: "50px"}} src={item.image} alt="im" />
-                        </div> 
-                    )
-                })
-            }      
-        </div>
+            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+                {
+                    covid.map((item , id: number) => {
+                        return(
+                            <ListItem>
+                                <ListItemAvatar>
+                                    <Avatar src={item.image} alt="im" />
+                                </ListItemAvatar>
+                                <ListItemText>{item.title}</ListItemText>
+                            </ListItem>
+                        )
+                    })
+                }   
+            </List>     
     );
 };
 
