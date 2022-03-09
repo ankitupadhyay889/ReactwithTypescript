@@ -1,7 +1,7 @@
 import React from 'react';
 
 type Eve = {
-    haC: (event: React.MouseEvent<HTMLButtonElement> , id: number) => void // or hum return k upper bhi kr skte hai  not important last me dekho
+    haC: (event: React.MouseEvent<HTMLButtonElement> , id: number) => void // or hum return k upper bhi kr skte hai const lga k not important last me dekho
 }
 
 const Eventprop = (props:Eve) => {

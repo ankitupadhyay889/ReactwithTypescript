@@ -11,7 +11,7 @@ const dat = yup.object().shape({
 });
 
 const Form = () => {
-    const {register, handleSubmit, formState: { errors }} = useForm({
+    const {register, handleSubmit, formState:{ errors }} = useForm({
         resolver: yupResolver(dat),
       });
       

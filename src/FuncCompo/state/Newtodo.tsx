@@ -8,6 +8,7 @@ const Newtodo = () => {
 
     const [input, setinput] = useState<string | number>("")
     const [show, setshow] = useState<Array<any>>([])
+    
     // const [show, setshow] = useState<string[]>([])
     const [toog, settoog] = useState<boolean>(true)
     const [edit, setedit] = useState<string | number>("")

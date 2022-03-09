@@ -12,7 +12,7 @@ const Proplist = (props: Lis) => {
             {
                 props.names.map((nak) => {
                     return(
-                        <h1 key={nak.first}> <li>FullName {nak.first} {nak.last} </li> </h1>
+                        <h1 key={nak.first}> <li>FullName is {nak.first} {nak.last} </li> </h1>
                     )
                 })
             }

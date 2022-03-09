@@ -33,10 +33,10 @@ const Userregis = (props: sty) => {
         const name = e.currentTarget.name
         const value = e.currentTarget.value;
 
-        setuseRegis({...useRegis , [name] : value})
+        setuseRegis({...useRegis , [name]: value})
     }
 
-    const subKa = (e: any) => {
+    const subKa = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const all = {...useRegis};
         setstore([...store , all]);

@@ -11,15 +11,12 @@ const Sbkocall = () => {
     return (
         <>
         <h1>Colorful Custom Button Components</h1>
-        <Button 
-            border="none"
-            color="green"
+        <Button border="none" color="green"
             height="50px"
             width="100px"
             radius="5%"
             onClick={kp}
-            children = "Button"
-        />
+            children = "Button"/>
         </>
     );
 };

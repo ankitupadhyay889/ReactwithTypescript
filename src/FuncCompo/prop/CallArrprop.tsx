@@ -1,7 +1,7 @@
 import React from 'react';
 
 type greT = {
-    category: Array<any>,
+    category: Array<string>,
     isBool: Boolean,
     name: {
         fname: string,

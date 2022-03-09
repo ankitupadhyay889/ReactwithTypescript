@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -11,7 +11,7 @@ const dat = yup.object().shape({
 });
 
 const Formyp = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const { register, handleSubmit, formState:{ errors }, reset } = useForm({
     resolver: yupResolver(dat),
   });
   const onSu = (data: any) => {

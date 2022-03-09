@@ -2,7 +2,7 @@ import React from 'react';
 
 type Inp = {
     value: string
-    // hanC: (event: React.ChangeEvent<HTMLInputElement>) => void   agar mann hai toh event aise as a prop call krlo vrna best hai compo m karo.
+    // hanC: (event: React.ChangeEvent<HTMLInputElement>) => void  agar mann hai toh event aise as a prop call krlo vrna best hai compo m karo.
 }
 
 const Inpt = (props: Inp) => {

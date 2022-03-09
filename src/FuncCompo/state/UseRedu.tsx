@@ -11,7 +11,7 @@ const initV: Isis = {cout: 0};
 
 function reduc(state: Isis , action: any){
     switch(action.type){
-        case "incr":
+        case "incre":
             return {cout: state.cout + 1}
         case "decre":
             return {cout: state.cout - 1}
@@ -25,7 +25,7 @@ const UseRedu = () => {
     const [coutstate, dispatch] = useReducer(reduc , initV)
 
     const Ino = () => {
-        dispatch({type : "incr"})
+        dispatch({type : "incre"})
     }
 
     const Dno = () => {

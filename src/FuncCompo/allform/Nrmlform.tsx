@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEventHandler, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 // in this yup validation work but you have to use like this form or you want controlled then it not work on yup.

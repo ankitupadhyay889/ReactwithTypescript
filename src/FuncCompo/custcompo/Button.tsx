@@ -2,12 +2,12 @@ import React from 'react';
 
 type pass = {
     children?: React.ReactNode;
-    color?: string;
     onClick: ((e: React.MouseEvent<HTMLButtonElement , MouseEvent>) => void);
     height: string;
     border: string;
     width: string;
     radius: string;
+    color?: string;
 }
 
 const Button: React.FC<pass> = ({ 

@@ -11,7 +11,7 @@ const Simpleform = () => {
         e.preventDefault();
         const all = {data:dt};
         setshow([...show , all]);
-        setdt("");
+        setdt(" ");
     }
 
     const haC = (e:any) => {
