@@ -1,5 +1,6 @@
 import './App.css';
-import Calling from "./FuncCompo/state/Calling";
+import Acall from './FuncCompo/Acall';
+// import Calling from "./FuncCompo/state/Calling";
 // import To from "./Component/To";
 // import Useefct from './FuncCompo/state/Useefct';
 // import CallArrprop./FuncCompo/state/Callingrrprop';
@@ -50,7 +51,9 @@ const App = () => {
   return (
     <div className='App'>
 
-      <Calling />
+      <Acall />
+
+      {/* <Calling /> */}
 
       {/* <To /> */}
       {/* <New lists={list} /> */}
