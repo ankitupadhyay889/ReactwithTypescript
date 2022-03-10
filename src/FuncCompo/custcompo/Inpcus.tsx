@@ -17,7 +17,7 @@ const Inpcus = () => {
         <div>
             <form>
                 <label> Enter name: </label> 
-                <input type="text" name="name" value={dt} onChange={haC} />
+                {/* <input type="text" name="name" value={dt} onChange={haC} /> */}
             </form>
         </div>
     );
