@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 const getD = () => {
-    const saved = localStorage.getItem("name");
+    const saved = sessionStorage.getItem("name");
     if(saved){
-        return JSON.parse(localStorage.getItem("name") || "");
+        return JSON.parse(sessionStorage.getItem("name") || "");
     }else{
         return "";
     }
@@ -20,7 +20,7 @@ const Loclstoinp = () => {
 
     useEffect(() => {
         // storing input name
-        localStorage.setItem("name", JSON.stringify(name));
+        sessionStorage.setItem("name", JSON.stringify(name));
     }, [name])
     
 

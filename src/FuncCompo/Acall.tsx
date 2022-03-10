@@ -1,19 +1,23 @@
 import React from 'react';
 import Loclstoinp from './cookSessloca/Loclstoinp';
-// import Lcalsto from './cookSessloca/Lcalsto';
+import Lcalsto from './cookSessloca/Lcalsto';
 // import Newtodo from './state/Newtodo';
 // import Sbkocall from './custcompo/Sbkocall';
 // import Highco from './custcompo/Highco';
+import { CookiesProvider } from 'react-cookie';
+import Cookee from './cookSessloca/Cookee';
+import Cokeh from './cookSessloca/Cokeh';
 
 const Acall = () => {
     return (
         <div>
+            <CookiesProvider> <Cookee /> </CookiesProvider>
+
             <Loclstoinp />
-
-            {/* <Lcalsto /> */}
-
+            <Lcalsto />
             {/* <Newtodo /> */}
             {/* <Highco /> */}
+            <Cokeh />
             {/* <Sbkocall /> */}
         </div>
     );
