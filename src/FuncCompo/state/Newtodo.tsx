@@ -1,13 +1,24 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import EditIcon from '@mui/icons-material/Edit';
 import { TextField , IconButton } from '@mui/material';
 
+const geLoci = () => {
+    let list = localStorage.getItem('mytodo');
+    console.log("list");
+    if(list){
+        return JSON.parse(localStorage.getItem("mytodo") || "{}")
+    }else{
+        return [];
+    }
+    
+}
+
 const Newtodo = () => {
 
     const [input, setinput] = useState<string | number>("")
-    const [show, setshow] = useState<Array<any>>([])
+    const [show, setshow] = useState<Array<any>>(geLoci())
     
     // const [show, setshow] = useState<string[]>([])
     const [toog, settoog] = useState<boolean>(true)
@@ -53,6 +64,12 @@ const Newtodo = () => {
         setedit(ine);
         settoog(false);
     }
+
+    //! LocalStorage
+    useEffect(() => {
+        localStorage.setItem("mytodo" , JSON.stringify(show))
+    }, [show])
+     
 
     return (
         <div className='App'>
