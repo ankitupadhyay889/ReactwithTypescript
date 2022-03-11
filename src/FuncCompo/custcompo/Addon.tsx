@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 type poss = {
     color: string;
     width: string;
-    height: string
+    height: string;
 }
 
 const Addon = (props: poss) => {

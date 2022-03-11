@@ -20,7 +20,7 @@ const Button: React.FC<pass> = ({
     radius
   }) => { 
   return (
-    <button onClick={onClick} style={{backgroundColor: color,border,height,width, borderRadius: radius}}>{children}</button>
+    <button onClick={onClick} style={{backgroundColor: color,border,height,width, borderRadius: radius}}> {children} </button>
   );
 }
 export default Button;

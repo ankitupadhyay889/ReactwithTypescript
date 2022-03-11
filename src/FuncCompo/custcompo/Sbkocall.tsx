@@ -21,7 +21,7 @@ const Sbkocall = () => {
     return (
         <>
         <h1>Colorful Custom Button Components {as} </h1>
-        <Button border="none" color="green" height="50px" width="100px" radius="5%" onClick={kp} children = "Button"/>
+        <Button border="none" color="green" height="50px" width="100px" radius="5%" onClick={kp} children = 'Button'/>
 
         <br/><br/>
         <Addon color="green" height="50px" width="100px"/>
