@@ -8,14 +8,14 @@ const Couter = () => {
     
     const [counter, setcounter] = useState<number>(0)
 
-    useEffect(() => {
-        console.log("Initial count hua hai one time toh 0 se 1 dikhane lage ga browser p componentdidmount");
-        setcounter(counter + 1)
-    }, [])
-
     // useEffect(() => {
-    //     console.log("y update p call hota rahega isko componentdidupdate bhi khte hai");
-    // }, [counter])
+    //     console.log("Initial count hua hai one time toh 0 se 1 dikhane lage ga browser p componentdidmount");
+    //     setcounter(counter + 1)
+    // }, [])
+
+    useEffect(() => {
+        console.log("y update p call hota rahega isko componentdidupdate bhi khte hai");
+    }, [counter])
 
     // useEffect(() => {
     //     console.log("hr baar y call hoga jb bhi state chnage hoga or refresh hoga browser"); ye jayeda use nhi krte hum

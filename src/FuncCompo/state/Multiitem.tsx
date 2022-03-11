@@ -4,7 +4,7 @@ const deF = [
     { id: "1", value: "Ankit" },
     { id: "2", value: "Rahul" },
     { id: "3", value: "Mohit" },
-    { id: "4", value: "Surya" }, 
+    { id: "4", value: "Sanjay" }, 
 ];
 
 // you also define obect in useState.

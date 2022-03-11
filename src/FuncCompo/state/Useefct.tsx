@@ -17,7 +17,6 @@ type Smka = {
 const Useefct = () => {
     
     const [load, setload] = useState(true);
-    
     const [data, setdata] = useState<Smka[]>([]);
 
     const getDa = async() => {

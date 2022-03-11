@@ -1,5 +1,6 @@
 import React from 'react';
-import Inpcall from './custcompo/Inpcall';
+import Calrout from './custcompo/Calrout';
+// import Inpcall from './custcompo/Inpcall';
 // import Loclstoinp from './cookSessloca/Loclstoinp';
 // import Lcalsto from './cookSessloca/Lcalsto';
 // import Newtodo from './state/Newtodo';
@@ -12,8 +13,9 @@ import Inpcall from './custcompo/Inpcall';
 const Acall = () => {
     return (
         <div>
-            <Inpcall />
+            <Calrout />
 
+            {/* <Inpcall /> */}
             {/* <CookiesProvider> <Cookee /> </CookiesProvider> */}
             {/* <Loclstoinp /> */}
             {/* <Lcalsto /> */}
