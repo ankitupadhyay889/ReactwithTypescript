@@ -6,10 +6,16 @@ import Inpcus from "./Inpcus";
 const Sbkocall = () => {
 
     const [as, setas] = useState<number>(0)
+    const [name, setname] = useState<string>("")
 
     const kp = () => {
         console.log("This is cutom btn"); 
         setas( as + 1 );
+    }
+
+    const kalp = (e: any) => {
+        console.log(setname(e.target.value));
+        
     }
 
     return (
@@ -21,8 +27,7 @@ const Sbkocall = () => {
         <Addon color="green" height="50px" width="100px"/>
         
         <br/><br/>
-        <Inpcus />
-
+        <Inpcus value={name} onChange={kalp} />
         </>
     );
 };

@@ -1,23 +1,17 @@
-// import React, { useState } from 'react';
+import React from 'react';
 
-// type pp = {
-//     onClick: (() => void);
-//     values: React.InputHTMLAttributes<HTMLInputElement>;value?: string | number | readonly string[] | undefined
-// }
+type pl = {
+    value: string;
+    onChange: any;
+}
 
-const Inpcus = () => {
-
-    // const [dt, setdt] = useState<pp>();
-
-    // const haC = (e: any) => {
-    //     setdt(e.currentTarget.value)
-    // }
+const Inpcus = (props: pl) => {
 
     return (
         <div>
             <form>
                 <label> Enter name:  </label> 
-                {/* <input type="text" name="name" value={dt} onChange={haC} /> */}
+                <input type="text" value={props.value} onChange={props.onChange} />
             </form>
         </div>
     );
