@@ -8,8 +8,8 @@ const Cookee = () => {
     const [cookies, setCookie] = useCookies<string>(['user']);
 
     const handle = () => {
-        setCookie("Name" ,name, { path: '/' });
-        setCookie("Password" ,pwd, { path: '/' });
+        setCookie("Name is" ,name, { path: '/' });
+        setCookie("Password is" ,pwd, { path: '/' });
     }
 
     return (

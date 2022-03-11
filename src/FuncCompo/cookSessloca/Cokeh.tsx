@@ -5,9 +5,7 @@ const Cokeh = () => {
   const [cookies, setCookie] = useCookies<string>(["user"]);
 
   function handleCookie() {
-    setCookie("user", "ankit", {
-      path: "/"
-    });
+    setCookie("user", "ankit", {path: "/"});
   }
   return (
     <div className="App">
