@@ -12,6 +12,7 @@ export default class Render extends Component<Qpro , Qsa> {
 
     constructor(props:Qpro) {
       super(props)
+      
       this.state = {
          inde:0
       }
