@@ -5,9 +5,7 @@ type Listpro = {
       city: string;
       pincode: number;
     },
-    
     name:Array<any>, // ye jo any hai mtlb string number bollean kuch bhi lelo agar any ki jagah <string | number> toh arr m string
-
     lists:{
     name: string;
     pnumber: number;

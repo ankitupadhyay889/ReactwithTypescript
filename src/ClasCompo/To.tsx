@@ -80,7 +80,6 @@ const To = () => {
               <i className="fa fa-plus add-btn" onClick={addItem}></i>
             )}
           </div>
-          {/* show our items  */}
           <div className="showItems">
             {items.map((curElem) => {
               return (

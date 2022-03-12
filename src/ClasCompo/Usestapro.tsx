@@ -14,7 +14,7 @@ export default class Usestapro extends Component<MainPrp , MainState> {
       super(props)
         this.state = {
          name: "Ankit",
-         email: "hkiuyo@gmail.com"
+         email: "akiuyo@gmail.com"
       }
     }
 

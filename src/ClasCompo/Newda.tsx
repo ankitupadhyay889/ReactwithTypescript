@@ -17,7 +17,7 @@ class Newda extends Component<{} , Cosa> {
     }
 
     componentDidMount() {
-        setInterval(() => this.co() , 1000)
+        setInterval(() => this.co() , 2000)
     }
 
     render() {
