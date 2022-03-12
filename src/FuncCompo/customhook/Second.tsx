@@ -9,7 +9,6 @@ const Second = () => {
     const op = () => {
         setTog();
     }
-
     return (
         <div>
             <h3>{isTog ? "true" : "false"}</h3>

@@ -5,7 +5,6 @@ const useToggle = (inV: boolean): [boolean, () => void, React.Dispatch<React.Set
     const [isTog, setTog] = useState(inV || false);
     const onTog = () => setTog(!isTog);
     return [isTog , onTog , setTog]
-
 };
 
 export default useToggle;
