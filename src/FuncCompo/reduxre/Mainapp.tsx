@@ -5,6 +5,7 @@ import {incNu , deccNu} from "./actions/indexx";
 const Mainapp = () => {
 
     const myState = useSelector((state: any) => state.changeThe);
+
     const dispatch = useDispatch();
 
     return (
