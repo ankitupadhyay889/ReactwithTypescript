@@ -1,5 +1,5 @@
 import './App.css';
-import Mainapp from './FuncCompo/reduxre/Mainapp';
+// import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Acall from "./FuncCompo/Acall";
 // import Calling from "./FuncCompo/state/Calling";
 // import To from "./Component/To";
@@ -10,6 +10,7 @@ import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Callstat from './FuncCompo/state/Callstat';
 import store from "./store";
 import {Provider} from "react-redux";
+import MinApp from './FuncCompo/reduxtodo/MinApp';
 
 store.subscribe(() => console.log(store.getState()));
 
@@ -57,7 +58,7 @@ const App = () => {
     <div className='App'>
 
       <Provider store = {store}>
-          <Mainapp />
+          <MinApp />
       </Provider>
 
       {/* <Acall /> */}

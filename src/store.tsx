@@ -1,5 +1,6 @@
 import { createStore, compose } from "redux";
-import rootRed from "./FuncCompo/reduxre/reducrs/inde";
+// import rootRed from "./FuncCompo/reduxre/reducrs/inde";
+import rootReduc from "./FuncCompo/reduxtodo/reducr/Sarareducall";
 
 declare global {
     interface Window {
@@ -9,6 +10,6 @@ declare global {
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(rootRed, composeEnhancers())
+const store = createStore(rootReduc, composeEnhancers())
 
 export default store;
