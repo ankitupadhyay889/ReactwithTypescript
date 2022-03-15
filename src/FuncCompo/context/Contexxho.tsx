@@ -10,9 +10,7 @@ const Contexxho = () => {
     return (
         <>
         <div> Name {call.name} </div>
-        <div>
-            <h1> Name {cont} </h1>
-        </div>
+        <div><h1> Name {cont} </h1></div>
         </>        
     );
 };
