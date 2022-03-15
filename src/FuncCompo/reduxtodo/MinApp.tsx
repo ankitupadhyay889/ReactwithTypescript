@@ -7,8 +7,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const MinApp = () => {
 
-    const [input, setinput] = useState<string>("")
-    const list = useSelector((state: any) => state.toDo.list)
+    const [input, setinput] = useState<string>("");
+    const list = useSelector((state: any) => state.toDo.list);
     const dispatch = useDispatch<any>();
 
     const deoa = (e: React.ChangeEvent<HTMLInputElement>) => {

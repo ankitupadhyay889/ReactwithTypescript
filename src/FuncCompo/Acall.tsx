@@ -1,5 +1,5 @@
-import React from 'react';
-import Calrout from './custcompo/Calrout';
+import React, { useContext } from 'react';
+// import Calrout from './custcompo/Calrout';
 // import Inpcall from './custcompo/Inpcall';
 // import Loclstoinp from './cookSessloca/Loclstoinp';
 // import Lcalsto from './cookSessloca/Lcalsto';
@@ -9,11 +9,17 @@ import Calrout from './custcompo/Calrout';
 // import { CookiesProvider } from 'react-cookie';
 // import Cookee from './cookSessloca/Cookee';
 // import Cokeh from './cookSessloca/Cokeh';
+import { Fname } from './context/SenCo';
 
 const Acall = () => {
+
+    const fnam = useContext(Fname);
+
     return (
         <div>
-            <Calrout />
+            <h1> Name is {fnam} Upadhyay </h1>
+
+            {/* <Calrout /> */}
 
             {/* <Inpcall /> */}
             {/* <CookiesProvider> <Cookee /> </CookiesProvider> */}

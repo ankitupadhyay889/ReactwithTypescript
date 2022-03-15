@@ -5,7 +5,7 @@ const initiData = {
 type Action = {
     type: string;
     payload: any;
-    id: number;
+    id: number
 }
 
 const toDo = (state = initiData , action: Action) => {

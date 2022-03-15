@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 import Contexxho from "./Contexxho";
 
-
 export type Icont = {
     name: string;
     rollNo: number | null

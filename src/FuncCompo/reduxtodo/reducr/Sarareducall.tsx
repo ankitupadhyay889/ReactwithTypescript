@@ -8,3 +8,5 @@ const rootReduc = combineReducers({
 });
 
 export default rootReduc;
+
+export type State = ReturnType<typeof rootReduc>
