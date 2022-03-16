@@ -1,12 +1,12 @@
-//! Ye main reducer means hum isme sare reducers ko call krte hai.
+//! Ye main reducer means hum isme sare reducers ko call krte hai mtlb ki action ka functionaliti jha likhte hai.
 
 import toDo from "./toDo";
 import { combineReducers } from "redux";
 
-const rootReduc = combineReducers({
+const rootReducer = combineReducers({
     toDo
 });
 
-export default rootReduc;
+export default rootReducer;
 
-export type State = ReturnType<typeof rootReduc>
+export type RootState = ReturnType<typeof rootReducer>

@@ -4,11 +4,12 @@ import AddIcon from '@mui/icons-material/Add';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { addTo, delTo, remvTo} from './action/actionperfom';
 import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from './reducr/Sarareducall';
 
 const MinApp = () => {
 
     const [input, setinput] = useState<string>("");
-    const list = useSelector((state: any) => state.toDo.list);
+    const list = useSelector((state: RootState) => state.toDo.list);
     const dispatch = useDispatch<any>();
 
     const deoa = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,7 +20,7 @@ const MinApp = () => {
         <>
         <div>
             <figure>
-                <figcaption> Add Your List ✌ </figcaption>
+                <figcaption> Add Your Item ✌ </figcaption>
             </figure>
             <TextField id="standard-basic" label="✍ Add Item" variant="standard" value={input} onChange={deoa} />
             <IconButton> <AddIcon onClick={() => dispatch(addTo(input), setinput(""))} /> </IconButton>
@@ -35,7 +36,7 @@ const MinApp = () => {
         }
         <br/><br/>
         <div>
-            <Button onClick={() => dispatch(remvTo())}> Remove All </Button>
+            <Button variant="contained" onClick={() => dispatch(remvTo())}> Remove All </Button>
         </div>
         </>
     );

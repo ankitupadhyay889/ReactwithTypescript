@@ -1,14 +1,14 @@
-const initiData = {
+let initiDa = {
     list: []
 }
 
 type Action = {
     type: string;
     payload: any;
-    id: number
+    id: number;
 }
 
-const toDo = (state = initiData , action: Action) => {
+const toDo = (state: any = initiDa , action: Action) => {
     switch(action.type){
         case "AddTo" :
             const{id, data} = action.payload
