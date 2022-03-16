@@ -12,7 +12,7 @@ const iniV = {
 }
 
 const users = {
-    name: 'Amit Kumar',
+    name: 'Ankitji',
     rollNo: 7
 }
 
@@ -26,7 +26,7 @@ export function CallCont() {
     }
     return (
         <there.Provider value={use}>
-            <button onClick={() => updateName('Ankit1')}>Update Name</button>
+            <button onClick={() => updateName('Ankit')}>Update Name</button>
             <Contexxho />
         </there.Provider>
     )

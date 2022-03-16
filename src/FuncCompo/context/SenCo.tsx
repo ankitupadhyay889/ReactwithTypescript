@@ -1,13 +1,13 @@
 import React from 'react';
-import Acall from "../Acall";
-// import { CallCont } from './CallCont';
+// import Acall from "../Acall";
+import { CallCont } from './CallCont';
 
 const Fname = React.createContext<string>(" ");
 
 const SenCo = () => {
     return (
         <>
-            <Fname.Provider value={"Ankit"}> <Acall /> </Fname.Provider>  
+            <Fname.Provider value={"Ankit"}> <CallCont /> </Fname.Provider>  
         </>
     );
 };

@@ -13,7 +13,7 @@ import { Fname } from './context/SenCo';
 
 const Acall = () => {
 
-    const fnam = useContext(Fname)
+    const fnam = useContext(Fname);
 
     return (
         <div>
