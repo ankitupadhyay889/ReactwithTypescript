@@ -21,7 +21,7 @@ const MinApp = () => {
             <figure>
                 <figcaption> Add Your List ✌ </figcaption>
             </figure>
-            <TextField id="standard-basic" label="✍ Add Item" variant="outlined" value={input} onChange={deoa} />
+            <TextField id="standard-basic" label="✍ Add Item" variant="standard" value={input} onChange={deoa} />
             <IconButton> <AddIcon onClick={() => dispatch(addTo(input), setinput(""))} /> </IconButton>
         </div>
         {

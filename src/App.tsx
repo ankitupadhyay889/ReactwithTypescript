@@ -1,6 +1,6 @@
 import './App.css';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
-import Acall from "./FuncCompo/Acall";
+// import Acall from "./FuncCompo/Acall";
 // import Calling from "./FuncCompo/state/Calling";
 // import To from "./Component/To";
 // import Useefct from './FuncCompo/state/Useefct';
@@ -8,11 +8,11 @@ import Acall from "./FuncCompo/Acall";
 // import New from './FuncCompo/New';
 // import Proplist from './FuncCompo/Proplist';
 // import Callstat from './FuncCompo/state/Callstat';
-// import store from "./store";
-// import {Provider} from "react-redux";
-// import MinApp from './FuncCompo/reduxtodo/MinApp';
+import store from "./store";
+import {Provider} from "react-redux";
+import MinApp from './FuncCompo/reduxtodo/MinApp';
 
-// store.subscribe(() => console.log(store.getState()));
+store.subscribe(() => console.log(store.getState()));
 
 const App = () => {
 
@@ -57,11 +57,11 @@ const App = () => {
   return (
     <div className='App'>
 
-      {/* <Provider store = {store}>
+      <Provider store = {store}>
           <MinApp />
-      </Provider> */}
+      </Provider>
 
-      <Acall />
+      {/* <Acall /> */}
       {/* <Calling /> */}
       {/* <To /> */}
       {/* <New lists={list} /> */}

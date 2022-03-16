@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+// import React, { useContext } from 'react';
 import Basi from './context/Basi';
 // import Calrout from './custcompo/Calrout';
 // import Inpcall from './custcompo/Inpcall';
@@ -10,20 +10,18 @@ import Basi from './context/Basi';
 // import { CookiesProvider } from 'react-cookie';
 // import Cookee from './cookSessloca/Cookee';
 // import Cokeh from './cookSessloca/Cokeh';
-import { Fname } from './context/SenCo';
+// import { Fname } from './context/SenCo';
 
 const Acall = () => {
 
-    const fnam = useContext(Fname);
+    // const fnam = useContext(Fname);
 
     return (
         <div>
             <Basi />
 
-            <h1> Name is {fnam} Upadhyay </h1>
-
+            {/* <h1> Name is {fnam} Upadhyay </h1> */}
             {/* <Calrout /> */}
-
             {/* <Inpcall /> */}
             {/* <CookiesProvider> <Cookee /> </CookiesProvider> */}
             {/* <Loclstoinp /> */}
