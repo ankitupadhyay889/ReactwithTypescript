@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Basi from './context/Basi';
 // import Calrout from './custcompo/Calrout';
 // import Inpcall from './custcompo/Inpcall';
 // import Loclstoinp from './cookSessloca/Loclstoinp';
@@ -17,6 +18,8 @@ const Acall = () => {
 
     return (
         <div>
+            <Basi />
+
             <h1> Name is {fnam} Upadhyay </h1>
 
             {/* <Calrout /> */}
