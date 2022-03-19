@@ -34,7 +34,9 @@ const MinApp = () => {
                 )
             })
         }
+
         <br/><br/>
+        
         <div>
             <Button variant="contained" onClick={() => dispatch(remvTo())}> Remove All </Button>
         </div>

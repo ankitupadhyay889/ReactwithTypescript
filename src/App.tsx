@@ -8,9 +8,9 @@ import './App.css';
 // import New from './FuncCompo/New';
 // import Proplist from './FuncCompo/Proplist';
 // import Callstat from './FuncCompo/state/Callstat';
-import MinApp from './FuncCompo/reduxtodo/MinApp';
 import store from "./store";
 import {Provider} from "react-redux";
+import MinApp from './FuncCompo/reduxtodo/MinApp';
 
 store.subscribe(() => console.log(store.getState()));
 

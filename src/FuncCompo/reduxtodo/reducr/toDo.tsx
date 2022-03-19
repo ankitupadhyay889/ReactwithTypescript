@@ -26,7 +26,7 @@ const toDo = (state: any = initiDa , action: Action) => {
                 ...state, list: []
             }
 
-        default: return state
+        default: return state;
     }
 }
 

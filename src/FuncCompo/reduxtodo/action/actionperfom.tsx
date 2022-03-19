@@ -8,14 +8,12 @@ export const addTo = (data: string) => {
     }
 }
 
-
 export const delTo = (id: number) => {
     return{
         type: "DelTo",
         id
     }
 }
-
 
 export const remvTo = () => {
     return{
