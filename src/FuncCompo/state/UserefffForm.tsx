@@ -10,7 +10,7 @@ const UserefffForm = () => {
         e.preventDefault();
         console.log(luname.current?.value);
         const data = luname.current?.value;
-        data === " " ? alert("Please fill data first") : setshow(true);
+        data === "" ? alert("Please fill data first") : setshow(true);
     }
 
     return (
