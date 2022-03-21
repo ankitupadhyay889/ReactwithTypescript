@@ -1,7 +1,7 @@
 import React from 'react';
 // import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
-// import Memhoo from './Memhoo';
+import Memhoo from './Memhoo';
 // import Useefct from './Useefct';
 // import ApiCall from "./ApiCall";
 // import UseRedu from './UseRedu';
@@ -18,7 +18,7 @@ import React from 'react';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
 // import Conditionsl from './Conditionsl';
-import Iuser from './Iuser';
+// import Iuser from './Iuser';
 // import Form from './Form';
 // import Userregis from '../allform/Userregis';
 // import Simpleform from './Simpleform';
@@ -36,7 +36,7 @@ const Calling = () => {
 
             {/* <Sbkocall /> */}
 
-            {/* <Memhoo /> */}
+            <Memhoo />
 
             {/* <ApiCall /> */}
 
@@ -84,7 +84,7 @@ const Calling = () => {
 
             {/* <Form /> */}
 
-            <Iuser />
+            {/* <Iuser /> */}
 
             {/* <Conditionsl /> */}
 
