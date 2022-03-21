@@ -1,7 +1,7 @@
 import React from 'react';
 // import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
-import Memhoo from './Memhoo';
+// import Memhoo from './Memhoo';
 // import Useefct from './Useefct';
 // import ApiCall from "./ApiCall";
 // import UseRedu from './UseRedu';
@@ -10,7 +10,7 @@ import Memhoo from './Memhoo';
 // import SenCo from '../context/SenCo';
 // import { CallCont } from '../context/CallCont';
 // import Contexxho from '../context/Contexxho';
-// import Refhoo from './Refhoo';
+import Refhoo from './Refhoo';
 // import UserefffForm from "./UserefffForm";
 // import Usrefhoo from './Usrefhoo';
 // import Formyp from "../allform/Formyp";
@@ -36,7 +36,7 @@ const Calling = () => {
 
             {/* <Sbkocall /> */}
 
-            <Memhoo />
+            {/* <Memhoo /> */}
 
             {/* <ApiCall /> */}
 
@@ -54,7 +54,7 @@ const Calling = () => {
 
             {/* <Contexxho /> */}
 
-            {/* <Refhoo /> */}
+            <Refhoo />
 
             {/* <UserefffForm /> */}
 

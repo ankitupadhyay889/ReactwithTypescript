@@ -1,16 +1,27 @@
 import React, { useRef } from 'react';
-import cla from "./logo192.png"
+import Cla from "./logo192.png";
 
 const Refhoo = () => {
 
-    const log = useRef<any>(null)
+    const log = useRef<HTMLInputElement>(null)
+    const logo = useRef<HTMLImageElement>(null)
+
     const Po = () => {
-        log.current.style.transform = "rotate(25deg)"
+        if(log.current){
+            log.current.value = "100";
+        }
+    }
+    const Pop = () => {
+        if(logo.current){
+            logo.current.style.transform = "rotate(25deg)"
+        }
     }
 
     return (
         <div>
-            <img src={cla} alt="po" onClick={Po} ref = {log} />
+            <input type="text" ref = {log} />
+            <button onClick={Po}> Ref </button>
+            <img src={Cla} alt="ijak" onClick={Pop} ref = {logo} />
         </div>
     );
 };
