@@ -1,5 +1,5 @@
 import React from 'react';
-import HighComp from '../custcompo/HighComp';
+// import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
 // import Memhoo from './Memhoo';
 // import Useefct from './Useefct';
@@ -18,7 +18,7 @@ import HighComp from '../custcompo/HighComp';
 // import All from '../customhook/All';
 // import Multiitem from './Multiitem';
 // import Conditionsl from './Conditionsl';
-// import Iuser from './Iuser';
+import Iuser from './Iuser';
 // import Form from './Form';
 // import Userregis from '../allform/Userregis';
 // import Simpleform from './Simpleform';
@@ -32,7 +32,7 @@ import HighComp from '../custcompo/HighComp';
 const Calling = () => {
     return (
         <div>
-            <HighComp />
+            {/* <HighComp /> */}
 
             {/* <Sbkocall /> */}
 
@@ -84,7 +84,7 @@ const Calling = () => {
 
             {/* <Form /> */}
 
-            {/* <Iuser /> */}
+            <Iuser />
 
             {/* <Conditionsl /> */}
 

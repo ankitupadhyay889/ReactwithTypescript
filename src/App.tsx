@@ -1,18 +1,18 @@
 import './App.css';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Acall from "./FuncCompo/Acall";
-// import Calling from "./FuncCompo/state/Calling";
+import Calling from "./FuncCompo/state/Calling";
 // import To from "./Component/To";
 // import Useefct from './FuncCompo/state/Useefct';
 // import CallArrprop./FuncCompo/state/Callingrrprop';
 // import New from './FuncCompo/New';
 // import Proplist from './FuncCompo/Proplist';
 // import Callstat from './FuncCompo/state/Callstat';
-import store from "./store";
-import {Provider} from "react-redux";
-import MinApp from './FuncCompo/reduxtodo/MinApp';
+// import store from "./store";
+// import {Provider} from "react-redux";
+// import MinApp from './FuncCompo/reduxtodo/MinApp';
 
-store.subscribe(() => console.log(store.getState()));
+// store.subscribe(() => console.log(store.getState()));
 
 const App = () => {
 
@@ -57,18 +57,19 @@ const App = () => {
   return (
     <div className='App'>
 
-      <Provider store = {store}>
-          <MinApp />
-      </Provider>
+      <Calling />
 
+      {/* <Useefct /> */}
+      {/* <Provider store = {store}>
+          <MinApp />
+      </Provider> */}
       {/* <Acall /> */}
-      {/* <Calling /> */}
       {/* <To /> */}
       {/* <New lists={list} /> */}
       {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
       {/* <Proplist names={full} /> */}
       {/* <Callstat /> */}
-      {/* <Useefct /> */}
+
     </div>
   );
 };

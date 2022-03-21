@@ -1,40 +1,44 @@
 // bas thoda type define krlo tumhara hi shi hai tum apna hi karo wo best hai. string type se input m string number sb likh rha.
 
-import React, { useState } from 'react';
+import React, { ChangeEvent,useState } from 'react';
 
-type fom = {
+type Fom = {
     fname: string;
     lname: string;
     email: string;
-    age: number;
 }
 
 const defV = {
     fname: "",
     lname: "",
     email: "",
-    age: 0
 }
 
 const Iuser = () => {
 
-    const [data, setdata] = useState<fom>(defV);
+    const [data, setdata] = useState<Fom>(defV);
 
-    const haC = (e:any) => {
-        setdata(e.currentTarget.value)
+    const haC = (e: ChangeEvent<HTMLInputElement>) => {
+        const name = e.target.name;
+        const value = e.target.value;
+
+        setdata({...data , [name]: value});
+    }
+
+    const fomSub = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log(data);
     }
 
     return (
         <div>
-            <form>
+            <form onSubmit={fomSub}>
                 <label> Enter name: </label> 
                 <input type="text" name="fname" autoComplete="off" value={data.fname} onChange={haC} />
                 <br/>
                 <input type="text" name="lname" autoComplete="off" value={data.lname} onChange={haC} />
                 <br/>
                 <input type="text" name="email" autoComplete="off" value={data.email} onChange={haC} />
-                <br/>
-                <input type="number" name="age" autoComplete="off" value={data.age} onChange={haC} />
                 <br/>
                 <button type="submit">Submit</button>
             </form>

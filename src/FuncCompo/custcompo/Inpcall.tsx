@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import Inpcus from './Inpcus';
 
 const Inpcall = () => {
 
     const [inp, setinp] = useState<string>("")
 
-    const pla = (e: any) => {
+    const pla = (e: ChangeEvent<HTMLInputElement>) => {
         console.log(setinp(e.target.value));
         setinp("");
     }

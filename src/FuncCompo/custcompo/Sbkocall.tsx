@@ -1,5 +1,5 @@
 import Button from "./Button";
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import Addon from "./Addon";
 import Inpcus from "./Inpcus";
 
@@ -13,7 +13,7 @@ const Sbkocall = () => {
         setas( as + 1 );
     }
 
-    const kalp = (e: any) => {
+    const kalp = (e: ChangeEvent<HTMLInputElement>) => {
         console.log(setname(e.target.value));
         
     }
