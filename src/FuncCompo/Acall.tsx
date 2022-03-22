@@ -1,5 +1,5 @@
 // import React, { useContext } from 'react';
-import Basi from "./context/Basi";
+import Basi from "./constexts/Basi";
 // import Calrout from './custcompo/Calrout';
 // import Inpcall from './custcompo/Inpcall';
 // import Loclstoinp from './cookSessloca/Loclstoinp';

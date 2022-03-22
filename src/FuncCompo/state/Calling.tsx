@@ -1,7 +1,7 @@
 import React from 'react';
 // import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
-import Memhoo from './Memhoo';
+import Memhoo from '../reffandmem/Memhoo';
 // import Useefct from './Useefct';
 // import ApiCall from "./ApiCall";
 // import UseRedu from './UseRedu';
@@ -32,11 +32,11 @@ import Memhoo from './Memhoo';
 const Calling = () => {
     return (
         <div>
+            <Memhoo />
+
             {/* <HighComp /> */}
 
             {/* <Sbkocall /> */}
-
-            <Memhoo />
 
             {/* <ApiCall /> */}
 

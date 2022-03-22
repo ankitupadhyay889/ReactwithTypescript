@@ -10,12 +10,12 @@ const dat = yup.object().shape({
     email: yup.string().email().required(),
 });
 
-const Form = () => {
+const Foem = () => {
     const {register, handleSubmit, formState:{ errors }} = useForm({
         resolver: yupResolver(dat),
       });
       
-    const [data, setdata] = useState<any>("")
+    const [data, setdata] = useState<Object>("")
 
     const [show, setshow] = useState<Array<any>>([]);
 
@@ -73,4 +73,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default Foem;
