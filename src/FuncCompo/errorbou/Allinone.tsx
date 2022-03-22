@@ -10,5 +10,4 @@ const Allinone = (props: Ips) => {
     </div>
   )
 }
-
 export default Allinone;
