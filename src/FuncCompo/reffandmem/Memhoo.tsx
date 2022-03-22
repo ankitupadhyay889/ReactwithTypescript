@@ -8,7 +8,6 @@ const Memhoo = () => {
     const Coka = () => {
         setco(co + 1)
     }
-
     const Setka = () => {
         setset(set * 2)
     }

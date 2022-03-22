@@ -11,6 +11,7 @@ const Refhoo = () => {
             log.current.value = "100";
         }
     }
+    
     const Pop = () => {
         if(logo.current){
             logo.current.style.transform = "rotate(25deg)"

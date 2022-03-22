@@ -1,5 +1,5 @@
 import React from 'react';
-import Nrmlform from '../allform/Nrmlform';
+import Nrmlform from '../allfoms/Nrmlform';
 import Newtodo from '../state/Newtodo';
 
 const Calrout = () => {
