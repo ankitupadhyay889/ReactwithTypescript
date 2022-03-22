@@ -2,7 +2,7 @@ type Ips = {
     error?: Error
 }
 
-function Allinone(props: Ips) {
+const Allinone = (props: Ips) => {
   return (
     <div role="alert">
       <p>An error occurred:</p>
