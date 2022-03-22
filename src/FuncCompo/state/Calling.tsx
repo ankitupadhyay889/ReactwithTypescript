@@ -1,7 +1,11 @@
 import React from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
+import Allinone from '../errorbou/Allinone';
+import Erhandboun from '../errorbou/Erhandboun';
+// import Fallbckerrr from '../errorbou/Fallbckerrr';
 // import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
-import Memhoo from '../reffandmem/Memhoo';
+// import Memhoo from '../reffandmem/Memhoo';
 // import Useefct from './Useefct';
 // import ApiCall from "./ApiCall";
 // import UseRedu from './UseRedu';
@@ -32,7 +36,11 @@ import Memhoo from '../reffandmem/Memhoo';
 const Calling = () => {
     return (
         <div>
-            <Memhoo />
+            <ErrorBoundary FallbackComponent={Allinone}>
+                <Erhandboun />
+            </ErrorBoundary>
+
+            {/* <Memhoo /> */}
 
             {/* <HighComp /> */}
 
