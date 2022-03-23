@@ -6,7 +6,7 @@ const Allinone = (props: Ips) => {
   return (
     <div role="alert">
       <p>An error occurred:</p>
-      <pre>{props?.error?.message}</pre>
+      <pre> {props?.error?.message} </pre>
     </div>
   )
 }
