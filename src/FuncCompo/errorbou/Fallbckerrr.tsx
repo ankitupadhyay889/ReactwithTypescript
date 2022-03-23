@@ -10,7 +10,7 @@ const Fallbckerrr = (props: Erpop) => {
         <div>
             <p> Something went wrong: </p>
             <pre>{props?.error?.message}</pre>
-            <button onClick={props.resetErrorBoundary}> Try Again </button>
+            <button onClick={props.resetErrorBoundary}>Try Again</button>
         </div>
     );
 };

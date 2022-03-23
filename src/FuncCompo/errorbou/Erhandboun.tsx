@@ -7,7 +7,8 @@ const Erhandboun = () => {
 
     return (
         <div>
-            {/* {Hnagle ? <Usercom /> : null} */}
+            {Hnagle ? <Usercom /> : null}
+            <h1> This is error boundary in React Hooks </h1>
             <button onClick={() => setHnagle(true)}> UserErrr </button>
         </div>
     );
