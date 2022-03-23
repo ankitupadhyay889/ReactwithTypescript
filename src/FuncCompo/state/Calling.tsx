@@ -1,7 +1,5 @@
 import React from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
-import Allinone from '../errorbou/Allinone';
-import Erhandboun from '../errorbou/Erhandboun';
+import Call from '../errorbou/Call';
 // import Fallbckerrr from '../errorbou/Fallbckerrr';
 // import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
@@ -36,10 +34,7 @@ import Erhandboun from '../errorbou/Erhandboun';
 const Calling = () => {
     return (
         <div>
-            
-            <ErrorBoundary FallbackComponent={Allinone}>
-                <Erhandboun />
-            </ErrorBoundary>
+            <Call />
 
             {/* <Memhoo /> */}
 

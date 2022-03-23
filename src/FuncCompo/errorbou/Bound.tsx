@@ -2,7 +2,7 @@ type Ips = {
     error?: Error
 }
 
-const Allinone = (props: Ips) => {
+const Bound = (props: Ips) => {
   return (
     <div role="alert">
       <p>An error occurred:</p>
@@ -10,4 +10,4 @@ const Allinone = (props: Ips) => {
     </div>
   )
 }
-export default Allinone;
+export default Bound;
