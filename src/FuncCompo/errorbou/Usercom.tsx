@@ -1,10 +1,18 @@
 import React from 'react';
 
-const Usercom = () => {
+type hNa = {
+    heroName: string
+}
+
+const Usercom = (props: hNa) => {
+
+    if(props.heroName === "Joker"){
+        throw new Error("Not a hero")
+    }
+
     return (
         <div>
-            <h1> Ankit </h1>
-            {new Error("Not Valid Data")}
+            {props.heroName}
         </div>
     );
 };

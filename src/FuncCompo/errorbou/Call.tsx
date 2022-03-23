@@ -11,7 +11,9 @@ const Call = () => {
                 <Erhandboun />
             </ErrorBoundary>
             <ErrorBoundary FallbackComponent={Bound}><Usercom/></ErrorBoundary> */}
-            <Erinclas> <Usercom/> </Erinclas>
+            <Erinclas> <Usercom heroName="Joker"/> </Erinclas>
+            <Erinclas> <Usercom heroName="Spidername"/> </Erinclas>
+            <Erinclas> <Usercom heroName="Batman"/> </Erinclas>
         </div>
     );
 };
