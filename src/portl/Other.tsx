@@ -7,3 +7,5 @@ const Other = () => {
 };
 
 export default Other;
+
+//! ye jo h1 k andar hai wo as a child hai or protaldem me maine alag se child banaya hai it depends in you 
