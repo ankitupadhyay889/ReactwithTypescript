@@ -1,5 +1,5 @@
 import ReactDom from 'react-dom';
-import "../App.css";
+import "../../App.css";
 
 const PortalDem = (props: any) => {
     return( 

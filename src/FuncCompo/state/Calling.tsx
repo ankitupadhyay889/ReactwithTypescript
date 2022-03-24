@@ -1,5 +1,5 @@
 import React from 'react';
-import {PortalDem , ModalDem} from "../../portl/PortalDem";
+import {PortalDem , ModalDem} from "../portl/PortalDem";
 // import Call from "../errorbou/Call";
 // import Fallbckerrr from '../errorbou/Fallbckerrr';
 // import HighComp from '../custcompo/HighComp';
