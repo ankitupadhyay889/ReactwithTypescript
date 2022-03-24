@@ -12,15 +12,14 @@ const Demo = (props: Ipor) => {
 
   if(!props.open) return null
 
-  return ReactDom.createPortal(
+  return(
     <>
     <div>
       <button onClick={props.onClose}> Close Modal </button>
       {props.children}
     </div>
-    </>,
-    document.getElementById("other-root") as HTMLElement
+    </>
   );
 };
-
+//! portal se style bhi alag ho jata hai right hand side ho jata hai or bina portal ek k neeche ek normal jaise hota hai 
 export default Demo;
