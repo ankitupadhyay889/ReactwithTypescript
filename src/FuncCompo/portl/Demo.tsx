@@ -1,20 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom";
-const modalRoot = document.getElementById("other-root") as HTMLElement;
-// assuming in your html file has a div with id 'modal-root';
+import React from 'react';
+import "../../App.css";
+import ReactDom from "react-dom";
 
-export class Demo extends React.Component {
-  el: HTMLElement = document.createElement("div");
-
-  componentDidMount() {
-    modalRoot.appendChild(this.el);
-  }
-
-  componentWillUnmount() {
-    modalRoot.removeChild(this.el);
-  }
-
-  render() {
-    return ReactDOM.createPortal(this.props.children, this.el);
-  }
+type Ipor = {
+  open: boolean;
+  children: React.ReactNode
+  onClose: () => void
 }
+
+const Demo = (props: Ipor) => {
+
+  if(!props.open) return null
+
+  return ReactDom.createPortal(
+    <>
+    <div>
+      <button onClick={props.onClose}> Close Modal </button>
+      {props.children}
+    </div>
+    </>,
+    document.getElementById("other-root") as HTMLElement
+  );
+};
+
+export default Demo;

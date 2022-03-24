@@ -1,5 +1,6 @@
 import React from 'react';
-import {PortalDem , ModalDem} from "../portl/PortalDem";
+import Modell from '../portl/Modell';
+// import {PortalDem , ModalDem} from "../portl/PortalDem";
 // import Call from "../errorbou/Call";
 // import Fallbckerrr from '../errorbou/Fallbckerrr';
 // import HighComp from '../custcompo/HighComp';
@@ -35,7 +36,9 @@ import {PortalDem , ModalDem} from "../portl/PortalDem";
 const Calling = () => {
     return (
         <div>
-            <PortalDem> <ModalDem/> </PortalDem>
+            <Modell />
+
+            {/* <PortalDem> <ModalDem/> </PortalDem> */}
 
             {/* <Call /> */}
 

@@ -1,34 +1,20 @@
 import React, { useState } from 'react';
-import { Demo } from './Demo';
+import Demo  from './Demo';
+import "../../App.css";
 
 const Modell = () => {
 
-    const [shwMo, setshwMo] = useState<boolean>(false);
+  const [isopen, setopen] = useState<boolean>(false)
 
-    return (
-        {shwMo && (
-            <Demo>
-              <div
-                style={{
-                  display: "grid",
-                  placeItems: "center",
-                  height: "100vh",
-                  width: "100vh",
-                  background: "rgba(0,0,0,0.1)",
-                  zIndex: 99,
-                }}
-              >
-                I'm a modal!{" "}
-                <button
-                  style={{ background: "papyawhip" }}
-                  onClick={() => setshwMo(false)}
-                >
-                  close
-                </button>
-              </div>
-            </Demo>
-        )}
-    );
+  return (
+    <div>
+      <div className='lpp'>
+        <button onClick={() => setopen(true)}>Opern Modal</button>
+        <Demo open={isopen} onClose={() => setopen(false)}> Fanc </Demo>
+      </div>
+      <div>Other Content</div>
+    </div>
+  );
 };
 
 export default Modell;
