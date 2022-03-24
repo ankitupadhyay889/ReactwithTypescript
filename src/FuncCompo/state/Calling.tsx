@@ -1,5 +1,6 @@
 import React from 'react';
-import Call from "../errorbou/Call";
+import Other from '../portl/Other';
+// import Call from "../errorbou/Call";
 // import Fallbckerrr from '../errorbou/Fallbckerrr';
 // import HighComp from '../custcompo/HighComp';
 // import Sbkocall from "../custcompo/Sbkocall";
@@ -34,7 +35,9 @@ import Call from "../errorbou/Call";
 const Calling = () => {
     return (
         <div>
-            <Call />
+            <Other />
+
+            {/* <Call /> */}
 
             {/* <Memhoo /> */}
 
