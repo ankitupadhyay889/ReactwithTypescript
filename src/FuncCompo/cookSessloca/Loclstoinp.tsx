@@ -19,7 +19,7 @@ const Loclstoinp = () => {
     }
 
     useEffect(() => {
-        // storing input name
+        // storing input names
         sessionStorage.setItem("name", JSON.stringify(name));
     }, [name])
     

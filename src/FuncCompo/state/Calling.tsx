@@ -1,5 +1,6 @@
 import React from 'react';
-import Modell from '../portl/Modell';
+import Appi from './Appi';
+// import Modell from '../portl/Modell';
 // import {PortalDem , ModalDem} from "../portl/PortalDem";
 // import Call from "../errorbou/Call";
 // import Fallbckerrr from '../errorbou/Fallbckerrr';
@@ -36,7 +37,9 @@ import Modell from '../portl/Modell';
 const Calling = () => {
     return (
         <div>
-            <Modell />
+            <Appi/>
+
+            {/* <Modell /> */}
             
             {/* <PortalDem> <ModalDem/> </PortalDem> */}
 

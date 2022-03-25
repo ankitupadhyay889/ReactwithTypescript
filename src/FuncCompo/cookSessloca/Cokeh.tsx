@@ -7,6 +7,7 @@ const Cokeh = () => {
   function handleCookie() {
     setCookie("user", "ankit", {path: "/"});
   }
+  
   return (
     <div className="App">
       <h1>React cookies</h1>

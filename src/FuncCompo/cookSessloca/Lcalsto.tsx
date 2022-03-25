@@ -62,6 +62,7 @@ const Lcalsto = () => {
                     })
                 }
             </div>
+            
             <Button border="none" color="Red" height="25px" width="60px" radius="5%" onClick={remall} children = "Remove"/>
         </div>
     );
