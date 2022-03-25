@@ -12,6 +12,7 @@ const Modell = () => {
         <button onClick={() => setopen(true)}>Opern Modal</button>
         <Demo open={isopen} onClose={() => setopen(false)}> Fanc </Demo>
       </div>
+      
       <div>Other Content</div>
     </div>
   );

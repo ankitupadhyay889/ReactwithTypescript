@@ -10,7 +10,7 @@ type Ipor = {
 
 const Demo = (props: Ipor) => {
 
-  if(!props.open) return null
+  if(!props.open) return null;
 
   return(
     <>
