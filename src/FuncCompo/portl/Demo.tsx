@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../App.css";
-import ReactDom from "react-dom";
+// import ReactDom from "react-dom";
 
 type Ipor = {
   open: boolean;
