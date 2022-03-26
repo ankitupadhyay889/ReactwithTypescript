@@ -1,5 +1,5 @@
 import React from 'react';
-import Reconci from './Reconci';
+import Reconci from "./Reconci";
 // import Appi from './Appi';
 // import Modell from '../portl/Modell';
 // import {PortalDem , ModalDem} from "../portl/PortalDem";

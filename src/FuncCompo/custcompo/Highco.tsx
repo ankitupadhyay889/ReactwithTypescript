@@ -16,7 +16,6 @@ function Highoc(props: any){
         </div>
     )
 }
-
 function Simple(props: any){
     return(
         <div>

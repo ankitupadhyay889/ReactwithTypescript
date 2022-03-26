@@ -10,4 +10,4 @@ const usePrevious = <T>(value: T) => {
 
 export default usePrevious;
 
-// T is type of hook
+// T is type of hook.

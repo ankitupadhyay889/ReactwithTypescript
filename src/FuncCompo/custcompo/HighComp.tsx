@@ -6,6 +6,7 @@ const HighComp = () => {
         <div>
             <h1> High Order Component </h1>
             <Hoc ank={Counter} />
+            
             <HocG ank={Counter} />
         </div>
     );

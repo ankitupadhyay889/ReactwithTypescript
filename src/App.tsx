@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1> This is React Main Root </h1>
+      <h1> This is React Main Root. </h1>
 
       <Calling />
 
