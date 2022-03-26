@@ -1,7 +1,6 @@
 import React from "react";
 
-class Reconci extends React.Component {
-  
+class Reconci extends React.Component { 
     state = {
       result: '',
       entry1: '',
