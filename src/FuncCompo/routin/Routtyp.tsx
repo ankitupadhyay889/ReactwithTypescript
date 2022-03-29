@@ -1,19 +1,31 @@
 import React from 'react';
 import { Routes , Route } from 'react-router-dom';
-import { About, Contact, Dashboard } from './Pages';
-import Linkin from './Linkin';
-import Errorpa from './Errorpa';
+// import { About, Contact, Dashboard } from './Pages';
+import { About, Dashboard } from './Pages';
+import Contact from './page/Contact';
+import Errorpa from './page/Errorpa';
+import Product from './page/Product';
+import Topic from "./page/Topic";
+
+// const Dashboard = React.lazy(() => import('./Pages').then(({Dashboard}) => ({default: Dashboard})));
+// const About = React.lazy(() => import('./Pages').then(({About}) => ({default: About})));
+// const Contact = React.lazy(() => import('./Pages').then(({Contact}) => ({default: Contact})));
+
+// const Loading = () => <p>Loading ...</p>;
 
 const Routtyp = () => {
     return (
         <>
-            <Linkin/>
+        {/* <React.Suspense fallback={<Loading />}> */}
             <Routes>
-                <Route path='/' element={<Dashboard />} />
+            <Route path='/' element={<Dashboard />} />
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route element={<Errorpa />} />
+                <Route path='/topic' element={<Topic />} />
+                <Route path='/product/:name' element={<Product />} />
+                <Route path='*' element={<Errorpa />} />
             </Routes> 
+        {/* </React.Suspense> */}
         </>
     );
 };

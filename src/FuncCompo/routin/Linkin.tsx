@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Routtyp from './Routtyp';
 
 const Linkin = () => {
     return (
@@ -16,9 +17,14 @@ const Linkin = () => {
                     <li className="nav-item active">
                         <NavLink className="nav-link" to="/contact">Contact</NavLink>
                     </li>
+                    <li className="nav-item active">
+                        <NavLink className="nav-link" to="/topic">Topic</NavLink>
+                    </li>
                     </ul>
                 </div>
             </nav>
+            <hr />
+            <Routtyp />
         </div>
     );
 };

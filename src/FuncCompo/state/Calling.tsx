@@ -1,5 +1,5 @@
 import React from 'react';
-import Routtyp from '../routin/Routtyp';
+import Linkin from '../routin/Linkin';
 // import RoutD from '../routin/RoutD';
 // import Reconci from "./Reconci";
 // import Appi from './Appi';
@@ -40,7 +40,7 @@ import Routtyp from '../routin/Routtyp';
 const Calling = () => {
     return (
         <div>
-            <Routtyp />
+            <Linkin />
 
             {/* <RoutD/> */}
 
