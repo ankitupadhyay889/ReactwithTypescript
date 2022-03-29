@@ -1,5 +1,5 @@
-import './App.css';
-import Calling from "./FuncCompo/state/Calling";
+// import './App.css';
+import Calling from './FuncCompo/state/Calling';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Acall from "./FuncCompo/Acall";
 // import To from "./Component/To";
@@ -56,14 +56,10 @@ const App = () => {
 
   return (
     <div className='App'>
-      <h1> This is React Main Root. </h1>
-
       <Calling />
 
       {/* <Useefct /> */}
-      {/* <Provider store = {store}>
-          <MinApp />
-      </Provider> */}
+      {/* <Provider store = {store}><MinApp /></Provider> */}
       {/* <Acall /> */}
       {/* <To /> */}
       {/* <New lists={list} /> */}

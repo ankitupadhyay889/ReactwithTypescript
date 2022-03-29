@@ -1,5 +1,6 @@
 import React from 'react';
-import RoutD from '../routin/RoutD';
+import Routtyp from '../routin/Routtyp';
+// import RoutD from '../routin/RoutD';
 // import Reconci from "./Reconci";
 // import Appi from './Appi';
 // import Modell from '../portl/Modell';
@@ -39,7 +40,9 @@ import RoutD from '../routin/RoutD';
 const Calling = () => {
     return (
         <div>
-            <RoutD/>
+            <Routtyp />
+
+            {/* <RoutD/> */}
 
             {/* <Reconci/> */}
 
