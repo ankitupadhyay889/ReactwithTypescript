@@ -8,6 +8,6 @@ export const Dashboard = () => <h1>Dashboard Page</h1>
 
 export const About = () => <h1>About Page</h1>
 
-export const Topic = () => <h1>Topic Page</h1>
+export const Topic = () => <h1>TopicPage</h1>
 
 export const Contact = () => <h1>Contact Page</h1>

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Routes , Route } from 'react-router-dom';
-import { About, Dashboard } from './Pages';
+// import { About, Dashboard } from './Pages';
 import Errorpa from './Errorpa';
 import Product from './Product';
 import Newone from './Newone';
 import Dimm from './Dimm';
 import Data from './Data';
 import Datalink from './Datalink';
+import UserForm from './compon/Userform';
 // import { About, Contact, Dashboard } from './Pages';
 // const Dashboard = React.lazy(() => import('./Pages').then(({Dashboard}) => ({default: Dashboard})));
 // const About = React.lazy(() => import('./Pages').then(({About}) => ({default: About})));
@@ -19,8 +20,8 @@ const Routtyp = () => {
         <>
         {/* <React.Suspense fallback={<Loading />}> */}
             <Routes>
-                <Route path='/' element={<Dashboard />} />
-                <Route path='/about' element={<About />} />
+                <Route path='/' element={<UserForm />} />
+                {/* <Route path='/about' element={<About />} /> */}
                 <Route path='/product/:name' element={<Product />} />
                 <Route path='/newone' element={<Newone />} />
                 <Route path='/dimm' element={<Dimm />} />
