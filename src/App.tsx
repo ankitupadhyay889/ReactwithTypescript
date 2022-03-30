@@ -1,4 +1,4 @@
-// import './App.css';
+import './App.css';
 import Calling from './FuncCompo/state/Calling';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Acall from "./FuncCompo/Acall";

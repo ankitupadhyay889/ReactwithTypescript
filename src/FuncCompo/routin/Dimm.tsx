@@ -8,15 +8,27 @@ const Dimm = () => {
 
   return (
     <div>
-        <h1> Recevier </h1>
+        {/* <h1> Recevier </h1>
         <p> From : {state.from} </p>        
         <p> Message : {state.message} </p>
         <p> Timestamp : {state.timestamp} </p>
         <p> Age : {state.age} </p>
         <p> Id : {state.id}</p>
-        <p> Price : {state.price}</p>
+        <p> Price : {state.price}</p> */}
+        <div>
+          <strong>Username:</strong> {state.username}
+        </div>
+        <div>
+          <strong>Email:</strong> {state.email}
+        </div>
+        <div>
+          <strong>City:</strong> {state.city}
+        </div>
+        <div>
+          <strong>Phone:</strong> {state.phone}
+        </div>
         <hr />
-        <Link to="/datalink">Go Home</Link>
+        <Link to="/">Go Home</Link>
     </div>
   );
 };

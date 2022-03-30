@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import { FormGroup } from '@mui/material';
 import Button from "@mui/material/Button";
+import "../../../App.css";
+import { useNavigate } from 'react-router-dom';
 
-const UserForm = (props: any) => {
+const UserForm = () => {
   const [state, setState] = useState({
     username: '',
     email: '',
@@ -11,13 +13,11 @@ const UserForm = (props: any) => {
     phone: ''
   });
 
-  const handleOnSubmit = (event: any) => {
-    event.preventDefault();
-    props.history.push({
-      pathname: '/details',
-      state
-    });
-  };
+  const hanOt = useNavigate();
+  const datasend = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    hanOt("/dimm" , {state})
+  }
 
   const handleInputChange = (event: any) => {
     const { name, value } = event.target;
@@ -25,23 +25,23 @@ const UserForm = (props: any) => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h1>Registration Form</h1>
-      <form className="register-form" onSubmit={handleOnSubmit}>
+      <form className="register-form" onSubmit={datasend}>
         <FormGroup id="username">
-          <TextField id="outlined-basic" label="Username" variant="outlined" 
+          <TextField id="standard-basic" label="Username" variant="standard" 
           type="text" placeholder="Enter username" name="username" onChange={handleInputChange}/>
         </FormGroup>
         <FormGroup id="email">
-          <TextField id="outlined-basic" label="Email" variant="outlined"
+          <TextField id="standard-basic" label="Email" variant="standard"
           type="email" placeholder="Enter email" name="email" onChange={handleInputChange}/>
         </FormGroup>
         <FormGroup id="city">
-          <TextField id="outlined-basic" label="City" variant="outlined"
+          <TextField id="standard-basic" label="City" variant="standard"
           type="text" placeholder="Enter city" name="city" onChange={handleInputChange}/>
         </FormGroup>
         <FormGroup id="phone">
-          <TextField id="outlined-basic" label="Phone" variant="outlined"
+          <TextField id="standard-basic" label="Phone" variant="standard"
           type="text" placeholder="Enter phone" name="phone" onChange={handleInputChange}/>
         </FormGroup>
         <Button variant="contained" type="submit">Register</Button>
