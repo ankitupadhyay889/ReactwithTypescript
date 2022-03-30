@@ -5,7 +5,7 @@ const Newone = () => {
 
   const datasen = useNavigate();
   const databehjo = () => {
-    datasen("/dimm" , {state: {name: "Ankit" , age:22 }})
+    datasen("/dimm" , {state: {id:1 , name: "Ankit" , age:22 }})
   }
 
   return (

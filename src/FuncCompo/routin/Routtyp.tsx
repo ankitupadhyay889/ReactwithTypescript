@@ -6,6 +6,7 @@ import Product from './Product';
 import Newone from './Newone';
 import Dimm from './Dimm';
 import Data from './Data';
+import Datalink from './Datalink';
 // import { About, Contact, Dashboard } from './Pages';
 // const Dashboard = React.lazy(() => import('./Pages').then(({Dashboard}) => ({default: Dashboard})));
 // const About = React.lazy(() => import('./Pages').then(({About}) => ({default: About})));
@@ -24,6 +25,7 @@ const Routtyp = () => {
                 <Route path='/newone' element={<Newone />} />
                 <Route path='/dimm' element={<Dimm />} />
                 <Route path='/data' element={<Data />} />
+                <Route path='/datalink' element={<Datalink />} />
                 <Route path='*' element={<Errorpa />} />
             </Routes> 
         {/* </React.Suspense> */}

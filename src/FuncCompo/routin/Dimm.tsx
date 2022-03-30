@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Dimm = () => {
@@ -8,12 +9,14 @@ const Dimm = () => {
   return (
     <div>
         <h1> Recevier </h1>
-        
-        <p> {state.name} </p>
-        <p> {state.age} </p>
-        <span>{state.id}</span>
-        <span>{state.name}</span>
-        <span>{state.price}</span>
+        <p> From : {state.from} </p>        
+        <p> Message : {state.message} </p>
+        <p> Timestamp : {state.timestamp} </p>
+        <p> Age : {state.age} </p>
+        <p> Id : {state.id}</p>
+        <p> Price : {state.price}</p>
+        <hr />
+        <Link to="/datalink">Go Home</Link>
     </div>
   );
 };
