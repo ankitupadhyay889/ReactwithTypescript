@@ -1,13 +1,12 @@
 import React from 'react';
 import { Routes , Route } from 'react-router-dom';
-// import { About, Contact, Dashboard } from './Pages';
 import { About, Dashboard } from './Pages';
 import Errorpa from './Errorpa';
 import Product from './Product';
 import Newone from './Newone';
 import Dimm from './Dimm';
 import Data from './Data';
-
+// import { About, Contact, Dashboard } from './Pages';
 // const Dashboard = React.lazy(() => import('./Pages').then(({Dashboard}) => ({default: Dashboard})));
 // const About = React.lazy(() => import('./Pages').then(({About}) => ({default: About})));
 // const Contact = React.lazy(() => import('./Pages').then(({Contact}) => ({default: Contact})));

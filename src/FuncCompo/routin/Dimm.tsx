@@ -8,6 +8,7 @@ const Dimm = () => {
   return (
     <div>
         <h1> Recevier </h1>
+        
         <p> {state.name} </p>
         <p> {state.age} </p>
         <span>{state.id}</span>

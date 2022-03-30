@@ -11,7 +11,7 @@ const Newone = () => {
   return (
     <div>
         <h1>New Page</h1>
-        <Button onClick={databehjo}> Go To Recevier </Button>
+        <Button onClick={databehjo}>Go To Recevier</Button>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import Linkin from '../routin/Linkin';
+import Linkin from "../routin/Linkin";
 // import Reconci from "./Reconci";
 // import Appi from './Appi';
 // import Modell from '../portl/Modell';

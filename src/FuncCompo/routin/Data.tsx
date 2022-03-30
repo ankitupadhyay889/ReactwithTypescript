@@ -14,10 +14,7 @@ const Data = () => {
   return (
     <ul>
       {products.map(product=>(
-        <li
-          key={product.id}
-          onClick={()=>handleClick(product)}
-        >
+        <li key={product.id} onClick={()=>handleClick(product)}>
           {product.name}
         </li>
       ))}
