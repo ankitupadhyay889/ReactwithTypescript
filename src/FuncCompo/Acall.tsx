@@ -12,7 +12,8 @@
 // import Cokeh from './cookSessloca/Cokeh';
 // import { Fname } from './context/SenCo';
 
-import Googintegrat from "./thirdparty/Googintegrat";
+// import Chaart from "./thirdparty/Chaart";
+import Chhart from "./thirdparty/Chhart";
 
 const Acall = () => {
 
@@ -20,7 +21,8 @@ const Acall = () => {
 
     return (
         <div>
-            <Googintegrat />
+            <Chhart />
+            {/* <Chaart /> */}
 
             {/* <Basi /> */}
             {/* <h1> Name is {fnam} Upadhyay </h1> */}
