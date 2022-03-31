@@ -1,5 +1,6 @@
 import './App.css';
-import Calling from './FuncCompo/state/Calling';
+import Acall from './FuncCompo/Acall';
+// import Calling from './FuncCompo/state/Calling';
 // import Mainapp from './FuncCompo/reduxre/Mainapp';
 // import Acall from "./FuncCompo/Acall";
 // import To from "./Component/To";
@@ -15,6 +16,47 @@ import Calling from './FuncCompo/state/Calling';
 // store.subscribe(() => console.log(store.getState()));
 
 const App = () => {
+  return (
+    <div className='App'>
+      <Acall/>
+
+      {/* <Calling /> */}
+      {/* <Useefct /> */}
+      {/* <Provider store = {store}><MinApp /></Provider> */}
+      {/* <Acall /> */}
+      {/* <To /> */}
+      {/* <New lists={list} /> */}
+      {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
+      {/* <Proplist names={full} /> */}
+      {/* <Callstat /> */}
+
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//! Ye sb props wala hai in typescript or sbse neeche class porps typsecript wala hai 
 
     //   let list = [
     //   {
@@ -53,48 +95,6 @@ const App = () => {
     //       last: "Gambhir"
     //     },
     //   ]
-
-  return (
-    <div className='App'>
-      <Calling />
-
-      {/* <Useefct /> */}
-      {/* <Provider store = {store}><MinApp /></Provider> */}
-      {/* <Acall /> */}
-      {/* <To /> */}
-      {/* <New lists={list} /> */}
-      {/* <CallArrprop category={ar} isBool={true} name={Full} /> */}
-      {/* <Proplist names={full} /> */}
-      {/* <Callstat /> */}
-
-    </div>
-  );
-};
-
-export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

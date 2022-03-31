@@ -1,5 +1,5 @@
 // import React, { useContext } from 'react';
-import Basi from "./constexts/Basi";
+// import Basi from "./constexts/Basi";
 // import Calrout from './custcompo/Calrout';
 // import Inpcall from './custcompo/Inpcall';
 // import Loclstoinp from './cookSessloca/Loclstoinp';
@@ -12,14 +12,17 @@ import Basi from "./constexts/Basi";
 // import Cokeh from './cookSessloca/Cokeh';
 // import { Fname } from './context/SenCo';
 
+import Googintegrat from "./thirdparty/Googintegrat";
+
 const Acall = () => {
 
     // const fnam = useContext(Fname);
 
     return (
         <div>
-            <Basi />
+            <Googintegrat />
 
+            {/* <Basi /> */}
             {/* <h1> Name is {fnam} Upadhyay </h1> */}
             {/* <Calrout /> */}
             {/* <Inpcall /> */}
