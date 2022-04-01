@@ -11,9 +11,9 @@
 // import Cookee from './cookSessloca/Cookee';
 // import Cokeh from './cookSessloca/Cokeh';
 // import { Fname } from './context/SenCo';
-
 // import Chaart from "./thirdparty/Chaart";
-import Chhart from "./thirdparty/Chhart";
+// import Chhart from "./thirdparty/Chhart";
+import Contact from "./arealdbfire/Contact";
 
 const Acall = () => {
 
@@ -21,9 +21,11 @@ const Acall = () => {
 
     return (
         <div>
-            <Chhart />
-            {/* <Chaart /> */}
+            <Contact />
 
+
+            {/* <Chhart /> */}
+            {/* <Chaart /> */}
             {/* <Basi /> */}
             {/* <h1> Name is {fnam} Upadhyay </h1> */}
             {/* <Calrout /> */}
